@@ -27,7 +27,7 @@ Hey! I'm Joey
     </div>
   </div>
   <div class="bg-card">
-    <img src="/assets/img/Techova.jpg" alt="Techova" />
+    <img src="/assets/img/Technova.jpg" alt="Techova" />
     <div class="bg-card-body">
       <h3>Techova College</h3>
       <p>MBO Game Developer</p>
