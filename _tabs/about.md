@@ -27,7 +27,7 @@ Hey! I'm Joey
       <span>2023 – Present</span>
     </div>
   </div>
-    </a>
+ </a>
 
   <div class="bg-card">
   <a href="https://www.technovacollege.nl/opleidingen/software-developer-0" target ="_blank_" class="bg-card">
@@ -39,11 +39,11 @@ Hey! I'm Joey
     </div>
   </div>
 </div>
-  </a>
-</div>
+</a>
 
 
 <div class="glow-box">
+</div>
 
 ## Skills
 
