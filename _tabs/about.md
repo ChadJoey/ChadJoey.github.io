@@ -5,36 +5,43 @@ icon: fas fa-user
 order: 1
 ---
 
-# Joey van Haren
-**Gameplay / AI Programmer**
+<div class="glow-box">
+
+# Who am I?
 
 Hey! I'm Joey
 
----
+</div>
+
+<div class="glow-box">
 
 ## My Background
 
-<div class="timeline">
-
-  <div class="timeline-entry">
-    <img src="/assets/img/Buas.jpg" alt="School" />
-    <div class="timeline-entry-text">
-      <h3>Breda University of Applied Sciences — Game Technologies Bachelor's Degree</h3>
+<div class="bg-grid">
+  <div class="bg-card">
+    <img src="/assets/img/buas.png" alt="BUas" />
+    <div class="bg-card-body">
+      <h3>Breda University of Applied Sciences</h3>
+      <p>Game Technologies Bachelor's Degree</p>
       <span>2023 – Present</span>
     </div>
   </div>
-
-  <div class="timeline-entry">
-    <img src="/assets/img/Technova.jpg" alt="School" />
-    <div class="timeline-entry-text">
-      <h3>Techova College - Game Developer</h3>
+  <div class="bg-card">
+    <img src="/assets/img/techova.png" alt="Techova" />
+    <div class="bg-card-body">
+      <h3>Techova College</h3>
+      <p>MBO Game Developer</p>
       <span>2018 – 2021</span>
     </div>
   </div>
+</div>
 
 </div>
 
----
+<div class="glow-box">
 
 ## Skills
+
 `C++` `C#` `Unity` `Unreal Engine` `Gameplay Systems` `AI / Behaviour Trees`
+
+</div>
