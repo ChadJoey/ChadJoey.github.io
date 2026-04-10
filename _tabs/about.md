@@ -49,8 +49,6 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
 }
 </style>
 
-
-
 <div class="glow-box">
   <h1>Who am I?</h1>
   <p>Hey! I'm Joey</p>
