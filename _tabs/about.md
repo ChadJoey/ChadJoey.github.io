@@ -18,16 +18,19 @@ Hey! I'm Joey
 ## My Background
 
   <div class="bg-grid">
-  <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target ="_blank_" class="bg-card">
-    <div class="bg-card">
-      <img src="/assets/img/Buas.jpg" alt="BUas" />
-      <div class="bg-card-body">
-        <h3>Breda University of Applied Sciences</h3>
-        <p>Game Technologies Bachelor's Degree</p>
-        <span>2023 – Present</span>
-      </a>
+
+    <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target ="_blank_" class="bg-card">
+      <div class="bg-card">
+        <img src="/assets/img/Buas.jpg" alt="BUas" />
+        <div class="bg-card-body">
+          <h3>Breda University of Applied Sciences</h3>
+          <p>Game Technologies Bachelor's Degree</p>
+          <span>2023 – Present</span>
+        </a>
+      </div>
      </div>
-    </div>
+
+  </div>
 
   <div class="bg-card">
     <a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target ="_blank_" class="bg-card">
