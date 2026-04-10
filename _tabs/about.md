@@ -17,18 +17,18 @@ Hey! I'm Joey
 <div class="timeline">
 
   <div class="timeline-entry">
-    <img src="/assets/images/your-school-logo.png" alt="School" />
+    <img src="/assets/images/Buas.jpg" alt="School" />
     <div class="timeline-entry-text">
-      <h3>Your School — Games Programming</h3>
+      <h3>Breda University of Applied Sciences — Game Technologies Bachelor's Degree</h3>
       <span>2023 – Present</span>
     </div>
   </div>
 
   <div class="timeline-entry">
-    <img src="/assets/images/some-job-logo.png" alt="Job" />
+    <img src="/assets/images/Technova.jpg" alt="School" />
     <div class="timeline-entry-text">
-      <h3>Previous Job or Project</h3>
-      <span>2021 – 2023</span>
+      <h3>Techova College - Game Developer</h3>
+      <span>2018 – 2021</span>
     </div>
   </div>
 
