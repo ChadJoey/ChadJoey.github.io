@@ -4,5 +4,15 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# Joey van Haren
+**Gameplay / AI Programmer**
+
+Hey! I'm Joey
+
+## Skills
+- Gameplay programming
+- AI / behaviour systems
+- C++, C#, Unity, Unreal
+
+## Education
+school / degree 
