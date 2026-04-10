@@ -214,3 +214,21 @@ a.bg-card {
 a.bg-card:hover {
   color: inherit !important;
 }
+
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill {
+  background: #1e3a4a;
+  color: #7dd3fc;
+  border: 1px solid #2dd4bf44;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
