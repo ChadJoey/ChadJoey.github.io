@@ -18,6 +18,7 @@ Hey! I'm Joey
 ## My Background
 
 <div class="bg-grid">
+<a href="https://www.buas.nl/opleidingen/bachelor-creative-media-and-game-technologies" target ="_blank_" class="bg-card">
   <div class="bg-card">
     <img src="/assets/img/Buas.jpg" alt="BUas" />
     <div class="bg-card-body">
@@ -25,8 +26,11 @@ Hey! I'm Joey
       <p>Game Technologies Bachelor's Degree</p>
       <span>2023 – Present</span>
     </div>
+    </a>
   </div>
+
   <div class="bg-card">
+  <a href="https://www.technovacollege.nl/opleidingen/software-developer-0" target ="_blank_" class="bg-card">
     <img src="/assets/img/Technova.jpg" alt="Techova" />
     <div class="bg-card-body">
       <h3>Techova College</h3>
@@ -34,11 +38,12 @@ Hey! I'm Joey
       <span>2018 – 2021</span>
     </div>
   </div>
+  </a>
 </div>
 
-</div>
 
 <div class="glow-box">
+</div>
 
 ## Skills
 
