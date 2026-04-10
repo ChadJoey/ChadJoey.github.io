@@ -204,3 +204,13 @@ h1, h2 {
   font-size: 0.8rem;
   color: #2dd4bf;
 }
+
+a.bg-card {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+}
+
+a.bg-card:hover {
+  color: inherit !important;
+}
