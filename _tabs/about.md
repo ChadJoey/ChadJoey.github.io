@@ -25,7 +25,7 @@ Hey! I'm Joey
   </div>
 
   <div class="timeline-entry">
-    <img src="/assets/imgTechnova.jpg" alt="School" />
+    <img src="/assets/img/Technova.jpg" alt="School" />
     <div class="timeline-entry-text">
       <h3>Techova College - Game Developer</h3>
       <span>2018 – 2021</span>
