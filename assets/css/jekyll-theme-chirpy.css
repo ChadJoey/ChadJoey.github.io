@@ -1,0 +1,152 @@
+---
+---
+
+@import "main";
+/* ── Blue / Teal accent overrides ── */
+:root {
+  --link-color: #2dd4bf;
+  --link-underline-color: #2dd4bf55;
+}
+
+[data-mode="dark"], html {
+  --sidebar-active-color: #2dd4bf !important;
+  --link-color: #2dd4bf;
+}
+
+/* Sidebar hover + active nav */
+#sidebar a:hover,
+#sidebar .nav-link.active {
+  color: #2dd4bf !important;
+}
+
+/* Headings accent */
+h1, h2 {
+  color: #67e8f9;
+}
+
+/* Tag / badge pills */
+.btn.btn-outline-primary {
+  border-color: #2dd4bf;
+  color: #2dd4bf;
+}
+
+  .btn.btn-outline-primary:hover,
+  .btn.btn-outline-primary.active {
+    background-color: #2dd4bf;
+    color: #0f172a;
+  }
+
+/* Project card styles */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid #1e3a4a;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0f1e2a;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    border-color: #2dd4bf;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+
+.project-card-body {
+  padding: 1rem;
+}
+
+  .project-card-body h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #e2e8f0;
+  }
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #1e3a4a;
+  color: #7dd3fc;
+  border: 1px solid #2dd4bf44;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid #2dd4bf;
+  background: transparent;
+  color: #2dd4bf;
+  font-size: 0.8rem;
+  transition: all 0.15s;
+}
+
+  .filter-btn:hover, .filter-btn.active {
+    background: #2dd4bf;
+    color: #0f172a;
+  }
+
+.project-card.hidden {
+  display: none;
+}
+
+/* Background / timeline section */
+.timeline {
+  margin-top: 1.5rem;
+}
+
+.timeline-entry {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #1e3a4a;
+}
+
+  .timeline-entry img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: #1e3a4a;
+    padding: 4px;
+    flex-shrink: 0;
+  }
+
+.timeline-entry-text h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+}
+
+.timeline-entry-text span {
+  font-size: 0.8rem;
+  color: #64748b;
+}
