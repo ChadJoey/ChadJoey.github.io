@@ -26,8 +26,8 @@ Hey! I'm Joey
       <p>Game Technologies Bachelor's Degree</p>
       <span>2023 – Present</span>
     </div>
-    </a>
   </div>
+    </a>
 
   <div class="bg-card">
   <a href="https://www.technovacollege.nl/opleidingen/software-developer-0" target ="_blank_" class="bg-card">
@@ -38,12 +38,12 @@ Hey! I'm Joey
       <span>2018 – 2021</span>
     </div>
   </div>
+</div>
   </a>
 </div>
 
 
 <div class="glow-box">
-</div>
 
 ## Skills
 
