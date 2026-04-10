@@ -19,7 +19,7 @@ Hey! I'm Joey
 
 <div class="bg-grid">
   <div class="bg-card">
-    <img src="/assets/img/buas.png" alt="BUas" />
+    <img src="/assets/img/Buas.png" alt="BUas" />
     <div class="bg-card-body">
       <h3>Breda University of Applied Sciences</h3>
       <p>Game Technologies Bachelor's Degree</p>
@@ -27,7 +27,7 @@ Hey! I'm Joey
     </div>
   </div>
   <div class="bg-card">
-    <img src="/assets/img/techova.png" alt="Techova" />
+    <img src="/assets/img/Techova.png" alt="Techova" />
     <div class="bg-card-body">
       <h3>Techova College</h3>
       <p>MBO Game Developer</p>
