@@ -67,13 +67,13 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
 <div class="glow-box">
   <h2>My Background</h2>
   <div class="bg-grid">
+    <a href="https://www.buas.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Buas.jpg')"></div>
-      <img src="/assets/img/Buas.jpg" alt="BUas" />
       <div class="bg-card-body">
         <h3>Breda University of Applied Sciences</h3>
         <p>Game Technologies Bachelor's Degree</p>
         <span>2023 – Present</span>
-      </div>
+     </div>
     </a>
     <a href="https://www.technova.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Technova.jpg')"></div>
