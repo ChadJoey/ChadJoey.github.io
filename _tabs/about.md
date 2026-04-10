@@ -19,7 +19,7 @@ Hey! I'm Joey
 
 <div class="bg-grid">
   <a href="https://www.buas.nl" target="_blank" class="bg-card">
-    <img src="/assets/ims/Buas.jpg" alt="BUas" />
+    <img src="/assets/img/Buas.jpg" alt="BUas" />
     <div class="bg-card-body">
       <h3>Breda University of Applied Sciences</h3>
       <p>Game Technologies Bachelor's Degree</p>
