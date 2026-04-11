@@ -30,6 +30,7 @@ toc: false
 
 .glow-box {
   width: 100%;
+  text-align: center;
   box-sizing: border-box;
   border: 1px solid #2dd4bf;
   border-radius: 12px;
@@ -72,7 +73,7 @@ a.bg-card:hover {
 .bg-card-body h3 { font-size: 0.95rem; color: #e2e8f0; margin: 0 0 0.4rem; }
 .bg-card-body p { font-size: 0.8rem; color: #94a3b8; margin: 0 0 0.4rem; }
 .bg-card-body span { font-size: 0.8rem; color: #2dd4bf; }
-.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
 .skill {
   background: #1e3a4a;
   color: #7dd3fc;
