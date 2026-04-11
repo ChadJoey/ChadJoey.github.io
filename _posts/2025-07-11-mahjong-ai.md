@@ -2,7 +2,7 @@
 layout: post
 title: "Mahjong AI"
 date: 2024-01-01
-toc: true
+toc: false
 ---
 
 ## About the Project
