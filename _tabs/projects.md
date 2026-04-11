@@ -268,5 +268,25 @@ toc: false
   </div>
 </a>
 
+
+<a href="/posts/fps-engine/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/fps-engine-banner.png')"></div>
+  <div class="project-card-body">
+    <h3>FPS engine</h3>
+    <div class="project-meta">
+      <span>👥 6</span>
+      <span>2nd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">Recast</span>
+    </div>
+    <p>An 8-week custom C++ engine project built by a team of 6 at BUas, on top of Bee, the university's in-house learning engine which provides a basic set of engine features for students to build upon. The engine, originally developed by team Wasp, was later merged with a graphics team called Firefly and continued as Firewasp. At the end of the block the engine was selected as the custom tech for the next group project.</p>
+  </div>
+</a>
+
+
+
   </div>
 </div>
