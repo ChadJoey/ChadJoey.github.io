@@ -5,16 +5,13 @@ icon: fas fa-user
 order: 1
 ---
 
+
 <style>
 .glow-box {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 1px solid #2dd4bf;
-  border-bottom: 1px solid #2dd4bf;
-  padding: 2.5rem 4rem;
-  margin-bottom: 1rem;
+  border: 1px solid #2dd4bf;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
   box-shadow: 0 0 18px #2dd4bf55, inset 0 0 18px #2dd4bf11;
 }
 .glow-box h1, .glow-box h2 {
@@ -25,7 +22,6 @@ order: 1
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 1rem;
 }
 a.bg-card {
   display: flex !important;
