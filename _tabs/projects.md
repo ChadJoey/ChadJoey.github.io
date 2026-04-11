@@ -251,5 +251,22 @@ toc: false
   </div>
 </a>
 
+<a href="/posts/voxel-ray-tracer/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/rat-trace-banner.png')"></div>
+  <div class="project-card-body">
+    <h3>Voxel Ray Tracer</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>1st year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">Ray Tracing</span>
+    </div>
+    <p>A voxel ray tracer built on top of a provided base, with a pong game made inside it that uses ray tracing functionality as a core part of the gameplay.</p>
+  </div>
+</a>
+
   </div>
 </div>
