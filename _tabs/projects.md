@@ -131,7 +131,7 @@ toc: false
 
 
 <a href="/posts/godot-behavior-tree-editor/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/behavior-tree-banner.png')"></div>
   <div class="project-card-body">
     <h3>Godot Behavior tree</h3>
     <div class="project-meta">
@@ -143,7 +143,8 @@ toc: false
       <span class="project-tag">C++</span>
       <span class="project-tag">behavior tree's</span>
     </div>
-    <p>A personal project where i deep dive into the workings of behavior tree's and try to implement my own behavior tree editor in Godot</p>
+    <p>A behavior tree plugin for Godot, built as a GDExtension in C++. The plugin adds a visual graph editor to the Godot editor for building and saving behavior trees, a runtime system for executing them, and a set of built-in node types covering the standard behavior tree building blocks.
+</p>
   </div>
 </a>
 
