@@ -2,8 +2,6 @@
 layout: post
 title: "Copper Clash"
 date: 2024-01-01
-categories: [Projects]
-tags: [unreal-engine, multiplayer, blueprints]
 toc: true
 ---
 
