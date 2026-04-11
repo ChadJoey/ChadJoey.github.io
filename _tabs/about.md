@@ -103,6 +103,9 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
     <span class="skill">Unity</span>
     <span class="skill">Unreal Engine</span>
     <span class="skill">Gameplay Systems</span>
-    <span class="skill">AI / Behaviour Trees</span>
+    <span class="skill">Turn Based AI</span>
+    <span class="skill">Pathfinding</span>
+    <span class="skill">Recast</span>
+    <span class="skill">Steering Behaviours</span>
   </div>
 </div>
