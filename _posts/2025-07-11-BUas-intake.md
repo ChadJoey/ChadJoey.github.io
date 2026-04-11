@@ -2,17 +2,15 @@
 layout: post
 title: "Buas intake"
 date: 2024-01-01
-toc: true
+toc: false
 ---
 
 ## About the Project
 My intake assignment for BUas, built before starting the programme. The brief required a game in C++ around the theme of "bounce." Coming from a background entirely in Unity, this was my first time writing C++.
 
-**Team:** Solo
-**Engine:** Custom template (provided by BUas)
-**Source code:** [GitHub](https://github.com/ChadJoey/BuasIntake)
-
-*(screenshot or gif of the game)*
+**Team:** Solo  
+**Engine:** Custom template (provided by BUas)  
+**Source code:** [GitHub](https://github.com/ChadJoey/BuasIntake) 
 
 ---
 ## The Game
