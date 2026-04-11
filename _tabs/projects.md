@@ -184,7 +184,7 @@ toc: false
 </a>
 
 <a href="/posts/rts-formations/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/rts-banner.png')"></div>
   <div class="project-card-body">
     <h3>RTS Formations</h3>
     <div class="project-meta">
@@ -196,7 +196,7 @@ toc: false
       <span class="project-tag">C++</span>
       <span class="project-tag">RTS</span>
     </div>
-    <p>A personal project where deep dive into RTS formations and how they sort themselfs</p>
+    <p>this is a self study project where i explore the workings of RTS formations and grouping. within this project i explore how units move across a field , sort themselfs in formations, and make a dynamic formation that can be tweaked on the fly</p>
   </div>
 </a>
 
