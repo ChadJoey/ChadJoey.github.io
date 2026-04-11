@@ -64,8 +64,6 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
   <p>Hey! I'm Joey</p>
 </div>
 
-<div class="glow-box">
-  <h2>My Background</h2>
   <div class="bg-grid">
     <a href="https://www.buas.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Buas.jpg')"></div>
@@ -73,7 +71,7 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
         <h3>Breda University of Applied Sciences</h3>
         <p>Game Technologies Bachelor's Degree</p>
         <span>2023 – Present</span>
-     </div>
+      </div>
     </a>
     <a href="https://www.technova.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Technova.jpg')"></div>
@@ -83,12 +81,10 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
         <span>2018 – 2021</span>
       </div>
     </a>
-  </div>
-
-     <a href="https://www.chimpworksgames.com" target="_blank" class="bg-card">
+    <a href="https://www.chimpworksgames.com" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/chimp.jpg')"></div>
       <div class="bg-card-body">
-        <h3>Techova College</h3>
+        <h3>Chimp Works Games</h3>
         <p>Internship</p>
         <span>2021 – 2021</span>
       </div>
