@@ -64,6 +64,7 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
   <p>Hey! I'm Joey</p>
 </div>
 
+<div class="glow-box">
   <div class="bg-grid">
     <a href="https://www.buas.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Buas.jpg')"></div>
