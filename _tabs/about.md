@@ -14,6 +14,16 @@ toc: false
   padding-right: 0 !important;
 }
 
+#main-wrapper .row {
+  --bs-gutter-x: 0;
+}
+
+.col-xl-11, .col-xl-9, .col-lg-11, .col-lg-9 {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 100% !important;
+}
+
 .glow-box {
   width: 100%;
   box-sizing: border-box;
