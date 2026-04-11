@@ -113,7 +113,7 @@ toc: false
   <div class="project-grid">
 
 <a href="/posts/copper-clash/" class="project-card">
-  <div class="project-placeholder">[ image coming soon ]</div>
+  <div class="project-placeholder">[assets/img/copper.png]</div>
   <div class="project-card-body">
     <h3>Copper Clash</h3>
     <div class="project-meta">
