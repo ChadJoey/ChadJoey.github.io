@@ -14,9 +14,10 @@ toc: false
   padding-right: 0 !important;
 }
 
-#main-wrapper .row {
-  --bs-gutter-x: 0;
+#main-wrapper .container {
+  max-width: 100% !important;
 }
+
 .page-inner {
   max-width: 100% !important;
 }
