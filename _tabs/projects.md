@@ -235,7 +235,7 @@ toc: false
 </a>
 
 <a href="/posts/pitfall-3d/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/[pitfall-3d-banner.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/pitfall-3d-banner.png')"></div>
   <div class="project-card-body">
     <h3>Pitfall 3D</h3>
     <div class="project-meta">
