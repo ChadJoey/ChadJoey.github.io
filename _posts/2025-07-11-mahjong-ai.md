@@ -8,10 +8,10 @@ toc: false
 ## About the Project
 A Mahjong AI built in Unreal Engine as a self-study project over 8 weeks. The project covers two main systems: a shanten calculator that measures how far a hand is from winning, and a Monte Carlo AI that uses it to make discard decisions. Three difficulty levels let the approaches be compared directly in gameplay.
 
-**Team:** Solo
-**Duration:** 8 weeks
-**Engine:** Unreal Engine
-**Source code:** [GitHub](https://github.com/ChadJoey/Mahjong)
+**Team:** Solo    
+**Duration:** 8 weeks   
+**Engine:** Unreal Engine   
+**Source code:** [GitHub](https://github.com/ChadJoey/Mahjong)    
 
 ---
 
