@@ -57,6 +57,36 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
   flex-shrink: 0;
 }
 
+
+.glow-box {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1rem;
+}
+
+/* Responsive cards */
+@media (max-width: 768px) {
+  .bg-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .glow-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .bg-card-img {
+    height: 200px;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
 </style>
 
 <div class="glow-box">
