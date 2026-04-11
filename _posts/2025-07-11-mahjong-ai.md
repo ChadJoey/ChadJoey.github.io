@@ -335,7 +335,7 @@ Here is a game from start to finish that ends in a Ron
     <video controls muted style="border: 1px white solid; max-width: 100%;">
         <source src="/assets/vids/Game.mp4" type="video/mp4"/>
     </video>
-    <figcaption><em>Easy, Medium x2, and Hard agents playing each other</em></figcaption>
+    <figcaption><em>Hard x4 agents playing each other</em></figcaption>
 </figure>
 </center>
 
