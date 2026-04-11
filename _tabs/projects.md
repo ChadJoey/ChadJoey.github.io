@@ -149,7 +149,7 @@ toc: false
 
 
 <a href="/posts/nakon/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/nakon-banner.png')"></div>
   <div class="project-card-body">
     <h3>Nakon</h3>
     <div class="project-meta">
