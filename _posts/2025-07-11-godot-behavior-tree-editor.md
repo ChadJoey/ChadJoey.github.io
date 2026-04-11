@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Copper Clash"
+title: "Godot behavior tree editor"
 date: 2024-01-01
 toc: true
 ---

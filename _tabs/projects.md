@@ -217,7 +217,22 @@ toc: false
   </div>
 </a>
 
-
+<a href="/posts/pitfall/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Pitfall</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>1st year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">Platformer</span>
+    </div>
+    <p>My first project at BUas, a recreation of the classic Atari game Pitfall built on top of a custom C++ engine.</p>
+  </div>
+</a>
 
 
 

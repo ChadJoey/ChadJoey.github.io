@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Copper Clash"
+title: "Mahjong AI"
 date: 2024-01-01
 toc: true
 ---

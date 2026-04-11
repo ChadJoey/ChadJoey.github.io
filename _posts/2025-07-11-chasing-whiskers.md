@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Copper Clash"
+title: "Chasing Whiskers"
 date: 2024-01-01
 toc: true
 ---
