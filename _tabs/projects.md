@@ -287,6 +287,21 @@ toc: false
   </div>
 </a>
 
+<a href="/posts/Buas-intake/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/doodle-banner.png')"></div>
+  <div class="project-card-body">
+    <h3>doodle jump</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>Intake</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+    </div>
+    <p>My intake assignment for BUas, built before starting the programme. The brief required a game in C++ around the theme of "bounce." Coming from a background entirely in Unity, this was my first time writing C++.</p>
+  </div>
+</a>
 
 
   </div>
