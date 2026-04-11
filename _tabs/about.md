@@ -16,7 +16,7 @@ order: 1
 .glow-box h1, .glow-box h2 { text-align: center; margin-bottom: 1.5rem; }
 .bg-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 1rem;
 }
