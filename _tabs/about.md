@@ -7,13 +7,20 @@ order: 1
 
 <style>
 .glow-box {
-  border: 1px solid #2dd4bf;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 1px solid #2dd4bf;
+  border-bottom: 1px solid #2dd4bf;
+  padding: 2.5rem 4rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0 18px #2dd4bf55, inset 0 0 18px #2dd4bf11;
 }
-.glow-box h1, .glow-box h2 { text-align: center; margin-bottom: 1.5rem; }
+.glow-box h1, .glow-box h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 .bg-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -31,13 +38,22 @@ a.bg-card {
   text-decoration: none !important;
   color: inherit !important;
 }
-a.bg-card:hover { transform: translateY(-3px); border-color: #2dd4bf; }
-a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
+a.bg-card:hover {
+  transform: translateY(-3px);
+  border-color: #2dd4bf;
+}
+.bg-card-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
 .bg-card-body { padding: 1rem; text-align: center; }
 .bg-card-body h3 { font-size: 0.95rem; color: #e2e8f0; margin: 0 0 0.4rem; }
 .bg-card-body p { font-size: 0.8rem; color: #94a3b8; margin: 0 0 0.4rem; }
 .bg-card-body span { font-size: 0.8rem; color: #2dd4bf; }
-.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .skill {
   background: #1e3a4a;
   color: #7dd3fc;
@@ -47,56 +63,23 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
   font-size: 0.85rem;
   font-family: monospace;
 }
-
-.bg-card-img {
-  width: 100%;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
-  display: block;
-  flex-shrink: 0;
-}
-
-
-.glow-box {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 0;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 1rem;
-}
-
-/* Responsive cards */
 @media (max-width: 768px) {
-  .bg-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .glow-box {
-    padding: 1.5rem 1rem;
-  }
-
-  .bg-card-img {
-    height: 200px;
-  }
-
-  .skills-list {
-    justify-content: center;
-  }
+  .bg-grid { grid-template-columns: 1fr; }
+  .glow-box { padding: 1.5rem 1rem; }
+  .bg-card-img { height: 200px; }
+  .skills-list { justify-content: center; }
 }
 </style>
 
 <div class="glow-box">
   <h1>Who am I?</h1>
   <p>I'm a third-year Games Programming student at Breda University of Applied Sciences (BUas), specializing in gameplay and AI systems. Games have been a passion of mine since I was young, not just playing them but wanting to understand how they work and eventually build them myself.</p>
-  <p>I started out with a web development course but it did not click for me. I moved on to a Software Development MBO that had a game development specialization, which was exactly what I was looking for. At the end of that study I did an internship at ChimpWorks Games, where I got my first real experience in actual game development and found my footing in the industry..</p>
+  <p>I started out with a web development course but it did not click for me. I moved on to a Software Development MBO that had a game development specialization, which was exactly what I was looking for. At the end of that study I did an internship at ChimpWorks Games, where I got my first real experience in actual game development and found my footing in the industry.</p>
   <p>That internship gave me the inspiration and drive to take the next step and enroll at BUas. In my second year I discovered a real interest in gameplay AI, building systems that feel responsive and intelligent, and that has been my focus ever since. My goal is to keep growing in that direction and eventually work in the AAA industry.</p>
 </div>
 
 <div class="glow-box">
+  <h2>My Background</h2>
   <div class="bg-grid">
     <a href="https://www.buas.nl" target="_blank" class="bg-card">
       <div class="bg-card-img" style="background-image: url('/assets/img/Buas.jpg')"></div>
@@ -123,8 +106,6 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
       </div>
     </a>
   </div>
-
-
 </div>
 
 <div class="glow-box">
