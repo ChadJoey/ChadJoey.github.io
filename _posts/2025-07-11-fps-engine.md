@@ -8,7 +8,6 @@ toc: true
 ## About the Project
 An 8-week custom C++ engine project built by a team of 6 at BUas, on top of Bee, the university's in-house learning engine which provides a basic set of engine features for students to build upon. The engine, originally developed by team Wasp, was later merged with a graphics team called Firefly and continued as Firewasp. At the end of the block the engine was selected as the custom tech for the next group project.
 
-This page covers the engine block. The game built on top of it is covered separately.
 
 **Team:** 6 programmers (Wasp)    
 **Duration:** 8 weeks   
@@ -22,8 +21,8 @@ My contributions were integrating the Recast navigation library into the engine,
 
 Recast is a navigation library that generates a 3D navmesh from geometry and lets agents traverse it. Integrating it into the engine involved adapting an existing implementation from a teammate's earlier project as a starting point, since documentation and working examples for the library were sparse.
 
-![Navmesh generating over the level](../assets/img/navmesh_reload.gif)
-![Agents traversing the navmesh](../assets/img/navmesh_walkin.gif)
+![Navmesh generating over the level](/assets/img/navmesh_reload.gif)
+![Agents traversing the navmesh](/assets/img/navmesh_walkin.gif)
 
 Setup is straightforward from a user perspective. A `.gltf` model is loaded and passed to the system, along with a choice between a `SOLO_MESH` for smaller maps and a `TILE_MESH` for larger ones:
 
@@ -296,7 +295,7 @@ case AgentAi::inCombat:
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/vids/return_to_path.mp4" type="video/mp4"/>
+        <source src="/assets/vids/return_to_path.mp4" type="video/mp4"/>
     </video>
     <figcaption><em>Agent spotting the player, investigating, then returning to patrol</em></figcaption>
 </figure>
@@ -305,7 +304,7 @@ case AgentAi::inCombat:
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/vids/attack.mp4" type="video/mp4"/>
+        <source src="/assets/vids/attack.mp4" type="video/mp4"/>
     </video>
     <figcaption><em>Agent entering combat and maintaining ranged distance</em></figcaption>
 </figure>
@@ -314,7 +313,7 @@ case AgentAi::inCombat:
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="../assets/vids/Stealthingk.mp4" type="video/mp4"/>
+        <source src="/assets/vids/Stealthingk.mp4" type="video/mp4"/>
     </video>
     <figcaption><em>Full gameplay loop played as intended</em></figcaption>
 </figure>
