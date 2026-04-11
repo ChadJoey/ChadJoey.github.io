@@ -27,10 +27,11 @@ I extended the renderer with reflective and glossy materials, glass materials fo
 
 {% include embed/video.html src='/assets/vids/pong.mp4' title='Pong gameplay' %}
 {% include embed/video.html src='/assets/vids/spotlight.mp4' title='Spotlight' %}
-{% include embed/video.html src='/assets/vids/stochastic.mp4' title='Stochastic lighting with accumulation' %}
-{% include embed/video.html src='/assets/vids/reflective.mp4' title='Reflective material' %}
-{% include embed/video.html src='/assets/vids/glossy.mp4' title='Glossy material' %}
+{% include embed/video.html src='/assets/vids/stochastic-lighting.mp4' title='Stochastic lighting with accumulation' %}
+{% include embed/video.html src='/assets/vids/reflection.mp4' title='Reflective material' %}
+{% include embed/video.html src='/assets/vids/glossy-material.mp4' title='Glossy material' %}
 {% include embed/video.html src='/assets/vids/accumulation.mp4' title='Glossy material with accumulation' %}
+{% include embed/video.html src='/assets/vids/glass-sphere.mp4' title='Glass Sphere' %}
 
 The game is a pong variant where each paddle is a spotlight pointing downward onto the play field. The ball reads the light cast by the spotlights to determine where it should bounce, meaning the ray tracing is directly tied to the game logic rather than just being visual. 
 
