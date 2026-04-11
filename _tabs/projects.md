@@ -168,7 +168,7 @@ toc: false
 
 
 <a href="/posts/mahjong-ai/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/mahjong-banner.png')"></div>
   <div class="project-card-body">
     <h3>Mahjong AI</h3>
     <div class="project-meta">
