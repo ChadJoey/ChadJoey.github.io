@@ -8,7 +8,15 @@ toc: false
 
 
 <style>
+#page-wrapper, .container-fluid, main.col-12 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-right: 0 !important;
+}
+
 .glow-box {
+  width: 100%;
+  box-sizing: border-box;
   border: 1px solid #2dd4bf;
   border-radius: 12px;
   padding: 2rem;
