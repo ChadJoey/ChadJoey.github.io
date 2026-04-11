@@ -44,27 +44,27 @@ The screenshots below show the in-engine testing tool. Each test displays the ha
 **W1 — Standard complete hand**<br>
 1m 2m 3m | 4m 5m 6m | 7m 8m 9m | 1p 2p 3p | 4p 4p<br>
 Four sequences plus a pair. The simplest sanity check.<br>
-<img src="/assets/img/Mahjong/ShantenWinningTest.png"/>
+<img src="/assets/img/Mahjong/ShantenWinningTest.png" alt="W1 standard complete hand shanten test"/>
 
 **W2 — Seven pairs complete**<br>
 1m 1m | 2p 2p | 3s 3s | 4m 4m | 5p 5p | 6s 6s | 1z 1z<br>
 Seven pairs, all different tile types.<br>
-<img src="/assets/img/Mahjong/ShantenWinningTest2.png"/>
+<img src="/assets/img/Mahjong/ShantenWinningTest2.png" alt="W2 seven pairs complete shanten test"/>
 
 **W3 — Thirteen orphans complete**<br>
 1m 1m | 9m | 1p | 9p | 1s | 9s | 1z | 2z | 3z | 4z | 5z | 6z | 7z<br>
 All 13 terminals and honours plus a duplicate 1m. Tests the pair bonus in the kokushi formula.<br>
-<img src="/assets/img/Mahjong/ShantenWinningTest3.png"/>
+<img src="/assets/img/Mahjong/ShantenWinningTest3.png" alt="W3 thirteen orphans complete shanten test"/>
 
 **W4 — All-honour winning hand**<br>
 1z 1z 1z | 2z 2z 2z | 3z 3z 3z | 4z 4z 4z | 5z 5z<br>
 Four honour triplets plus a pair. No sequences possible. Forces the honour-only table path.<br>
-<img src="/assets/img/Mahjong/ShantenWinningTest4.png"/>
+<img src="/assets/img/Mahjong/ShantenWinningTest4.png" alt="W4 all-honour winning hand shanten test"/>
 
 **W5 — Quad tiles folded into a winning hand**<br>
 1m 1m 1m 1m | 2m 3m | 2p 3p 4p | 5p 6p 7p | 9s 9s<br>
 The four 1m tiles split across a triplet and a sequence. An earlier version of the calculator treated the quad as a single block and returned 0 instead of -1. This case now passes after the fix.<br>
-<img src="/assets/img/Mahjong/ShantenWinningTest5.png"/>
+<img src="/assets/img/Mahjong/ShantenWinningTest5.png" alt="W5 quad tiles folded into winning hand shanten test"/>
 
 </details>
 
@@ -74,42 +74,42 @@ The four 1m tiles split across a triplet and a sequence. An earlier version of t
 **T1 — Pair wait (tanki)**<br>
 1m 2m 3m | 4m 5m 6m | 7m 8m 9m | 1p 2p 3p | 4p<br>
 Four complete melds, isolated 4p waiting for its pair.<br>
-<img src="/assets/img/Mahjong/TenpaiTest.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest.png" alt="T1 pair wait tenpai test"/>
 
 **T2 — Two-sided sequence wait (ryanmen)**<br>
 1m 2m 3m | 4m 5m 6m | 7m 8m 9m | 1p 1p | 2p 3p<br>
 Three melds plus pair plus partial sequence, waiting for 1p or 4p.<br>
-<img src="/assets/img/Mahjong/TenpaiTest2.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest2.png" alt="T2 two-sided sequence wait tenpai test"/>
 
 **T3 — Middle tile wait (kanchan)**<br>
 1m 2m 3m | 4m 5m 6m | 7m 8m 9m | 1p 3p | 2p 2p<br>
 Partial kanchan needing 2p alongside a pair of 2p. Tests that a tile appearing in both does not confuse the calculator.<br>
-<img src="/assets/img/Mahjong/TenpaiTest3.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest3.png" alt="T3 middle tile wait tenpai test"/>
 
 **T4 — Double pair wait (shanpon)**<br>
 1m 2m 3m | 4m 5m 6m | 7m 8m 9m | 2p 2p | 3p 3p<br>
 Three melds plus two pairs, waiting for either to complete as a meld while the other stays as the pair.<br>
-<img src="/assets/img/Mahjong/TenpaiTest4.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest4.png" alt="T4 double pair wait tenpai test"/>
 
 **T5 — Honour-only tenpai**<br>
 1z 1z 1z | 2z 2z 2z | 3z 3z 3z | 4z 4z 4z | 5z<br>
 Four honour triplets, isolated 5z waiting for its pair. Forces the honour table exclusively.<br>
-<img src="../assets/media/TenpaiTest5.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest5.png" alt="T5 honour-only tenpai test"/>
 
 **T6 — Thirteen orphans tenpai**<br>
 1m | 9m | 1p | 9p | 1s | 9s | 1z | 2z | 3z | 4z | 5z | 6z | 7z<br>
 All 13 terminals and honours with no duplicate, waiting for any one of them.<br>
-<img src="/assets/img/Mahjong/TenpaiTest6.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest6.png" alt="T6 thirteen orphans tenpai test"/>
 
 **T7 — Seven pairs tenpai with a triplet**<br>
 1m 1m 1m | 2p 2p | 3s 3s | 4m 4m | 5p 5p | 6s 6s | 7z<br>
 Six pairs where one is a triplet. The triplet should count as only one pair. Waiting for 7z.<br>
-<img src="/assets/img/Mahjong/TenpaiTest7.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest7.png" alt="T7 seven pairs tenpai with triplet test"/>
 
 **T8 — Both seven pairs and standard tenpai simultaneously**<br>
 1m 1m | 2m 2m | 3m 3m | 4m 4m | 5m 5m | 6m 6m | 7m<br>
 Valid as both a six-pair wait and a standard four-meld wait on 7m. Tests that the minimum is taken correctly.<br>
-<img src="/assets/img/Mahjong/TenpaiTest8.png"/>
+<img src="/assets/img/Mahjong/TenpaiTest8.png" alt="T8 dual pattern tenpai test"/>
 
 </details>
 
@@ -119,12 +119,12 @@ Valid as both a six-pair wait and a standard four-meld wait on 7m. Tests that th
 **S1 — Three melds plus pair plus isolated honour**<br>
 1m 2m 3m | 4p 5p 6p | 7s 8s 9s | 1z 1z | 2z<br>
 Three complete melds plus a pair plus an isolated honour tile that contributes nothing. Needs one more useful tile.<br>
-<img src="/assets/img/Mahjong/ShantenTest.png"/>
+<img src="/assets/img/Mahjong/ShantenTest.png" alt="S1 three melds plus isolated honour shanten test"/>
 
 **S2 — Thirteen orphans one away, no pair**<br>
 1m | 9m | 1p | 9p | 1s | 9s | 1z | 2z | 3z | 4z | 5z | 6z | 5m<br>
 Twelve of the thirteen required terminals and honours, missing 7z, plus a useless 5m. No pair among the terminals.<br>
-<img src="/assets/img/Mahjong/ShantenTest2.png"/>
+<img src="/assets/img/Mahjong/ShantenTest2.png" alt="S2 thirteen orphans one away shanten test"/>
 
 </details>
 
