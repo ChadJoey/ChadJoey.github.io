@@ -287,7 +287,7 @@ toc: false
   </div>
 </a>
 
-<a href="/posts/Buas-intake/" class="project-card">
+<a href="/posts/BUas-intake/" class="project-card">
 <div class="project-card-img" style="background-image: url('/assets/img/doodle-banner.png')"></div>
   <div class="project-card-body">
     <h3>doodle jump</h3>
