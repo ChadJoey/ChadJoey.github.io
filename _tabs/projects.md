@@ -234,7 +234,22 @@ toc: false
   </div>
 </a>
 
-
+<a href="/posts/pitfall-3d/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Pitfall 3D</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>1st year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">OpenGl</span>
+    </div>
+    <p>My second project at BUas, an endless runner built in a custom 3D engine targeting the Raspberry Pi. Despite the Pitfall name given by the school, the result ended up closer to Temple Run than the classic Atari game.</p>
+  </div>
+</a>
 
   </div>
 </div>
