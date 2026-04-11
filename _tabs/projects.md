@@ -112,7 +112,7 @@ toc: false
 <div class="glow-box">
   <div class="project-grid">
 
-<a href="/_posts/CopperClash/" class="project-card">
+<a href="/posts/copper-clash/" class="project-card">
   <div class="project-placeholder">[assets/img/copper.png]</div>
   <div class="project-card-body">
     <h3>Copper Clash</h3>
