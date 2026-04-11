@@ -128,5 +128,98 @@ toc: false
     <p>A chaotic last-man-standing racing game inspired by Mashed. Race through a dystopian industrial wasteland using machine guns, shotguns and landmines to take out up to 3 other local players.</p>
   </div>
 </a>
+
+
+<a href="/posts/godot-behavior-tree-editor/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Godot Behavior tree</h3>
+    <div class="project-meta">
+      <span>👥 solo</span>
+      <span>3rd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Godot</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">behavior tree's</span>
+    </div>
+    <p>A personal project where i deep dive into the workings of behavior tree's and try to implement my own behavior tree editor in Godot</p>
+  </div>
+</a>
+
+
+<a href="/posts/nakon/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Nakon</h3>
+    <div class="project-meta">
+      <span>👥 12</span>
+      <span>2nd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">AI</span>
+      <span class="project-tag">Recast Navigation</span>
+    </div>
+    <p>Nakon is a fast paced FPS, built from the ground up in a custom student made engine, combining interesting visuals with arcade style survival gameplay. It is cross platform with support for PS5.</p>
+  </div>
+</a>
+
+
+<a href="/posts/mahjong-ai/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Mahjong AI</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>3rd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Unreal Engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">AI</span>
+    </div>
+    <p>A personal project where i try to create a mahjong AI that can play against itself</p>
+  </div>
+</a>
+
+<a href="/posts/rts-formations/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>RTS Formations</h3>
+    <div class="project-meta">
+      <span>👥 Solo</span>
+      <span>2nd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">RTS</span>
+    </div>
+    <p>A personal project where deep dive into RTS formations and how they sort themselfs</p>
+  </div>
+</a>
+
+<a href="/posts/chasing-whiskers/" class="project-card">
+<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+  <div class="project-card-body">
+    <h3>Chasing Whiskers</h3>
+    <div class="project-meta">
+      <span>👥 24</span>
+      <span>3rd year</span>
+    </div>
+    <div class="project-tags">
+      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">C++</span>
+      <span class="project-tag">RTS</span>
+    </div>
+    <p>Chasing Whiskers is a fun action adventure where you try to find you're lost cat in the cat dimention after having lost it. in this world a mysterious tanuki helps you find you're cat but he does not work for free.</p>
+  </div>
+</a>
+
+
+
+
+
   </div>
 </div>
