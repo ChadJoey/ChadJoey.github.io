@@ -191,3 +191,11 @@ h1, h2 {
   background: #2dd4bf;
   color: #0f172a;
 }
+
+/* Hide post footer elements */
+.post-tail-wrapper,
+.post-navigation,
+#related-posts,
+.license-wrapper {
+  display: none !important;
+}
