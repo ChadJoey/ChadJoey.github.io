@@ -215,7 +215,7 @@ The zombies demo is a straightforward showcase of the navigation and agent syste
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
-        <source src="/assets/media/zambies.mp4" type="video/mp4"/>
+        <source src="/assets/vids/zambies.mp4" type="video/mp4"/>
     </video>
     <figcaption><em>Zombies demo</em></figcaption>
 </figure>
