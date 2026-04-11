@@ -84,6 +84,18 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
       </div>
     </a>
   </div>
+
+     <a href="https://www.chimpworksgames.com" target="_blank" class="bg-card">
+      <div class="bg-card-img" style="background-image: url('/assets/img/chimp.png')"></div>
+      <div class="bg-card-body">
+        <h3>Techova College</h3>
+        <p>Internship</p>
+        <span>2021 – 2021</span>
+      </div>
+    </a>
+  </div>
+
+
 </div>
 
 <div class="glow-box">
