@@ -61,7 +61,9 @@ a.bg-card img { width: 100%; height: 160px; object-fit: cover; display: block; }
 
 <div class="glow-box">
   <h1>Who am I?</h1>
-  <p>Hey! I'm Joey</p>
+  <p>I'm a third-year Games Programming student at Breda University of Applied Sciences (BUas), specializing in gameplay and AI systems. My path into game development wasn't straight — but every step pointed in the same direction.</p>
+  <p>I started with a web development course, quickly realized it wasn't for me, and pivoted to a Software Development MBO with a game development specialization. During my internship at Chimp Works Games I got my first real taste of production game development — and it confirmed exactly what I wanted to do.</p>
+  <p>That experience drove me to BUas, where I've been pushing my skills further ever since. In my second year I discovered a deep interest in gameplay AI — building systems that feel alive, react intelligently, and make games more engaging. That's the direction I'm headed, with the goal of working in the AAA industry.</p>
 </div>
 
 <div class="glow-box">
