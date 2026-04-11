@@ -17,6 +17,9 @@ toc: false
 #main-wrapper .row {
   --bs-gutter-x: 0;
 }
+.page-inner {
+  max-width: 100% !important;
+}
 
 .col-xl-11, .col-xl-9, .col-lg-11, .col-lg-9 {
   width: 100% !important;
