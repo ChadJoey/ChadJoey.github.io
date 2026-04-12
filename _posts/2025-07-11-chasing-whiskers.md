@@ -9,12 +9,12 @@ toc: false
 ## About the Project
 A comedic action game currently in development for Steam. You play as a grandma chasing and catching cats across a series of levels. As the AI programmer my responsibility is the cat AI: how they move, how they react to the player, and how they use the environment to evade capture.
 
-**Team:** 24 (6 programmers, 8 designers, 10 artists )
-**Engine:** Unreal Engine 5
-**Role:** AI programmer
-**Status:** In development
+**Team:** 24 (6 programmers, 8 designers, 10 artists )  
+**Engine:** Unreal Engine 5   
+**Role:** AI programmer   
+**Status:** In development    
 
-*(screenshot or trailer coming soon)*
+*(trailer coming soon)*
 
 ---
 ## Overview
