@@ -2,3 +2,191 @@
 layout: home
 # Index page
 ---
+
+<style>
+  .home-intro {
+    text-align: center;
+    padding: 2rem 0 1rem;
+  }
+
+    .home-intro h1 {
+      font-size: 2rem;
+      color: #67e8f9;
+      margin-bottom: 0.5rem;
+    }
+
+    .home-intro p {
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+  .highlighted-projects {
+    margin-top: 2rem;
+  }
+
+    .highlighted-projects h2 {
+      color: #67e8f9;
+      margin-bottom: 1.5rem;
+    }
+
+  .highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  a.highlight-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #0f1e2a;
+    border: 1px solid #1e3a4a;
+    transition: transform 0.2s, border-color 0.2s;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+    a.highlight-card:hover {
+      transform: translateY(-3px);
+      border-color: #2dd4bf;
+    }
+
+  .highlight-card-img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  .highlight-placeholder {
+    width: 100%;
+    height: 180px;
+    background: #1e3a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2dd4bf44;
+    font-size: 0.8rem;
+  }
+
+  .highlight-card-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .highlight-card-body h3 {
+      font-size: 1rem;
+      color: #e2e8f0;
+      margin: 0 0 0.6rem;
+    }
+
+  .highlight-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+    flex: 1;
+  }
+
+  .highlight-tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #1e3a4a;
+    color: #7dd3fc;
+    border: 1px solid #2dd4bf44;
+  }
+
+  .highlight-read-more {
+    font-size: 0.85rem;
+    color: #2dd4bf !important;
+    text-decoration: none !important;
+    align-self: flex-start;
+  }
+
+    .highlight-read-more:hover {
+      text-decoration: underline !important;
+    }
+
+  #main-wrapper .container {
+    max-width: 100% !important;
+  }
+</style>
+
+<div class="home-intro">
+  <h1>My Portfolio</h1>
+  <p>Games Programming student at BUas, specializing in gameplay and AI systems.</p>
+</div>
+
+<div class="highlighted-projects">
+  <h2>Highlighted Projects</h2>
+  <div class="highlight-grid">
+
+    <a href="/posts/fps-engine/" class="highlight-card">
+      <div class="highlight-card-img" style="background-image: url('/assets/img/fps-engine-banner.png')"></div>
+      <div class="highlight-card-body">
+        <h3>FPS Engine</h3>
+        <div class="highlight-tags">
+          <span class="highlight-tag">Custom engine</span>
+          <span class="highlight-tag">Recast navigation</span>
+          <span class="highlight-tag">AI</span>
+        </div>
+        <span class="highlight-read-more">
+          An 8-week custom C++ engine project built by a team of 6 at BUas, on top of Bee, the university's in-house learning engine which provides a basic set of engine features for students to build upon. The engine, originally developed by team Wasp, was later merged with a graphics team called Firefly and continued as Firewasp. At the end of the block the engine was selected as the custom tech for the next group project.
+        </span>
+      </div>
+    </a>
+
+    <a href="/posts/nakon/" class="highlight-card">
+      <div class="highlight-card-img" style="background-image: url('/assets/img/nakon-banner.png')"></div>
+      <div class="highlight-card-body">
+        <h3>Nakon</h3>
+        <div class="highlight-tags">
+          <span class="highlight-tag">Custom engine</span>
+          <span class="highlight-tag">Recast navigation</span>
+          <span class="highlight-tag">AI</span>
+        </div>
+        <span class="highlight-read-more">
+          Nakon is a first-person horde shooter inspired by Call of Duty Zombies, built on the custom Firewasp engine over 8 weeks. Players fight through escalating waves of enemies, spending points to unlock weapons, buy perks, and purchase power-ups dropped by enemies.
+        </span>
+      </div>
+    </a>
+
+
+    <a href="/posts/mahjong-ai/" class="highlight-card">
+      <div class="highlight-card-img" style="background-image: url('/assets/img/mahjong-banner.png')"></div>
+      <div class="highlight-card-body">
+        <h3>Mahjong AI</h3>
+        <div class="highlight-tags">
+          <span class="highlight-tag">Unreal</span>
+          <span class="highlight-tag">Monte Carlo</span>
+          <span class="highlight-tag">Shanten calculator</span>
+        </div>
+        <span class="highlight-read-more">
+          A Mahjong AI built in Unreal Engine as a self-study project over 8 weeks. The project covers two main systems: a shanten calculator that measures how far a hand is from winning, and a Monte Carlo AI that uses it to make discard decisions. Three difficulty levels let the approaches be compared directly in gameplay.
+        </span>
+      </div>
+    </a>
+
+
+    <a href="/posts/chasing-whiskers/" class="highlight-card">
+      <div class="highlight-card-img" style="background-image: url('/assets/img/chasing-whiskers-banner.png')"></div>
+      <div class="highlight-card-body">
+        <h3>Chasing Whiskers</h3>
+        <div class="highlight-tags">
+          <span class="highlight-tag">Unreal</span>
+          <span class="highlight-tag">Steering</span>
+          <span class="highlight-tag">Cats</span>
+        </div>
+        <span class="highlight-read-more">
+          A comedic action game currently in development for Steam. You play as a grandma chasing and catching cats across a series of levels. As the AI programmer my responsibility is the cat AI: how they move, how they react to the player, and how they use the environment to evade capture.
+        </span>
+      </div>
+    </a>
+
+  </div>
+</div>
