@@ -5,6 +5,7 @@
 
 #sidebar {
   background: #0a0a0a !important;
+  width: 260px !important;
 }
 
 #sidebar .nav-link.active,
@@ -311,6 +312,11 @@ a.highlight-card:hover {
 .panel-wrapper {
   display: none !important;
 }
+
+#main-wrapper {
+  margin-left: 260px !important;
+}
+
 
 #main-wrapper .container {
   max-width: 100% !important;
