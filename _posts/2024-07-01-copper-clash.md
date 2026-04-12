@@ -23,9 +23,7 @@ My two main contributions were the spline-based track tool used by the designers
 
 ## The Game
 
-![Copper Clash](/assets/img/copper.png)
-
-This was my first team game project and the first time I shipped something made with other people. Working across disciplines with designers and artists throughout the 8 weeks shaped how I approached my work, since the things I built had to actually be useable by others, not just functional.
+Copper Clash was my first team project and the first shipped game I made with other people.
 
 {% include embed/youtube.html id='XiE5Psd2Xdc' %}
 
@@ -51,7 +49,7 @@ Designers wanted to swap out road sections for different geometry to create jump
 
 ![Road material transition](/assets/img/material-blend.png)
 
-Artists wanted smooth transitions between different road surface looks. Vertex painting turned out to be broken for spline meshes in the version of Unreal we were using, so I built a dynamic material instead that blends between two road materials with exposed parameters the artists could tweak per segment. Full material replacement per segment was also supported for cases where the blend options were not enough.
+Artists wanted smooth transitions between different road surface looks. Vertex painting was broken for spline meshes in the Unreal version we were using, so I built a dynamic material instead that blends between two road surfaces with parameters artists could tweak per segment. Full material replacement per segment was also supported for cases where the blend wasn't enough.
 
 ### Performance and Iteration
 
@@ -63,10 +61,10 @@ As the tracks grew larger, real-time mesh generation started to slow down the ed
 
 ![Spline points](/assets/img/spline-points.png)
 
-The checkpoint system was built on top of the spline tool, spacing points across the spline and using them to track how far along the track each player was. Using this I was able to track laps and overall race progression.
+The checkpoint system is built on top of the spline tool. Points are distributed across the spline at regular intervals and used to measure each player's progress along the track as a continuous value rather than a discrete checkpoint count. This gave the lap counter and the race position display a consistent source of truth regardless of track shape or length.
 
 ---
 
 ## Reflection
 
-Shipping Copper Clash with a team of 13 was a different experience from anything I had done before. A lot of the work was less about writing code and more about understanding what the people using my tools actually needed, and being willing to revisit things when the answer changed.
+Copper Clash was the first time I built something that other people depended on daily. The spline tool got used throughout the project by designers and artists who weren't going to read code or file bug reports. If something was confusing or slow they would just work around it. Learning to notice that and respond to it, whether that meant merging two tools into one or moving mesh generation to a manual trigger, was more valuable than any individual technical problem I solved. It shaped how I think about building tools for a team rather than just for myself.

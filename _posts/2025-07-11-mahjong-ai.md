@@ -6,7 +6,8 @@ toc: false
 ---
 
 ## About the Project
-A Mahjong AI built in Unreal Engine as a self-study project over 8 weeks. The project covers two main systems: a shanten calculator that measures how far a hand is from winning, and a Monte Carlo AI that uses it to make discard decisions. Three difficulty levels let the approaches be compared directly in gameplay.
+
+Mahjong is an imperfect information game, which makes it a genuinely interesting AI problem. You can only see your own tiles and what opponents have discarded, so any decision has to reason about what might be hidden. This project covers two systems built over 8 weeks: a shanten calculator that measures how far a hand is from winning, and a Monte Carlo AI that uses it to make discard decisions under uncertainty. Three difficulty levels let the approaches be compared directly in gameplay.
 
 **Team:** Solo    
 **Duration:** 8 weeks   
@@ -313,10 +314,7 @@ The first video shows four Hard AI agents playing each other. The console output
 </center>
 
 The second video shows all three difficulty levels playing simultaneously: one Easy, two Medium, and one Hard. The difference in hand progression is visible through the shanten values logged each turn.
-
-The Hard AI reached a shanten of 1 quickly and held there, waiting for the specific tile it needed. The Medium agents made slower but consistent progress, eventually reaching shanten 1 and 0 toward the end. The random agent finished at shanten 3.
-
-A notable moment occurs near the end: the Hard AI's estimated win rate dropped from 58% to 2% after the tiles it was waiting for appeared in other players' discard piles. This confirms the simulation is correctly accounting for visible tile information rather than treating all tiles as equally available.
+The Hard AI reached shanten 1 quickly and held there, waiting for the specific tile it needed. The Medium agents made slower but consistent progress. The random agent finished at shanten 3. The most telling moment comes near the end: the Hard AI's estimated win rate dropped from 58% to 2% after the tiles it was waiting on appeared in other players' discard piles. That's the simulation correctly updating on visible information rather than treating all tiles as equally available. Exactly what it should do.
 
 <center>
 <figure style="text-align: center;">
@@ -338,6 +336,13 @@ Here is a game from start to finish that ends in a Ron
     <figcaption><em>Hard x4 agents playing each other</em></figcaption>
 </figure>
 </center>
+
+---
+
+## Reflection
+The shanten calculator and the Monte Carlo system were interesting in completely different ways. The calculator is a pure algorithmic problem: finding an efficient representation of hand state that makes the calculation fast enough to run inside a simulation loop. Getting the lookup table approach right, especially around edge cases like quads splitting across groups, required understanding the problem deeply enough to know where the table model breaks down and why.
+The Monte Carlo side was interesting for the opposite reason. The core algorithm is straightforward, but making it actually work well meant a series of careful decisions: pruning candidates before simulating, keeping random seeding on the game thread, batching simulations across cores rather than one task per candidate. None of those are obvious from the algorithm description alone. They came from thinking about where the naive implementation would be slow or wrong and working backwards from that.
+If I continued the project the natural next step would be modelling opponent intent more explicitly. Right now simulated opponents play greedily, which underestimates how dangerous a player close to tenpai actually is. Incorporating that would make the win rate estimates meaningfully more accurate.
 
 ---
 ## References

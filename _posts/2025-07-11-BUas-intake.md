@@ -6,8 +6,7 @@ toc: false
 ---
 
 ## About the Project
-My intake assignment for BUas, built before starting the programme. The brief required a game in C++ around the theme of "bounce." Coming from a background entirely in Unity, this was my first time writing C++.
-
+My intake assignment for BUas, built before starting the programme. Coming from a background entirely in Unity, this was my first time writing C++. The brief was a game around the theme of "bounce". I built a Doodle Jump-style endless platformer with procedural level generation, object pooling, and a hand-rolled component system.
 **Team:** Solo  
 **Engine:** Custom template (provided by BUas)  
 **Source code:** [GitHub](https://github.com/ChadJoey/BuasIntake) 
@@ -29,7 +28,7 @@ A Doodle Jump inspired endless platformer. The player bounces upward through pla
 ---
 ## Component System
 
-One of the first decisions I made was to structure the game around entities and components rather than putting all logic in a single class. Each game object is an `Entity` that holds a list of components, and behaviour is added by attaching the relevant ones:
+Rather than putting all logic into a single class, I structured the game around entities and components from the start. Each game object holds a list of components and gets its behaviour from whichever ones are attached:
 
 ```cpp
 player.AddComponent(new TransformComponent(cameraControl));
@@ -150,4 +149,4 @@ void Game::CheckCollisions()
 ---
 ## Reflection
 
-For a first attempt at C++ this project covered more ground than I expected. Designing the component system, writing an object pool, handling collision manually, and building a level system that modifies runtime behaviour are all patterns I went on to use and improve in later projects. The code has obvious rough edges but the underlying thinking was on the right track.
+For a first attempt at C++ this project covered more ground than I expected. The component system, object pooling, manual collision, and parameter-driven level generation are all patterns I went on to use in more complex forms in later projects. Looking back the code has rough edges, but the underlying approach was sound, and building these things from scratch in an unfamiliar language was a better foundation than I realised at the time.

@@ -13,7 +13,6 @@ A voxel ray tracer built on top of a provided base, with a pong game made inside
 **Team:** Solo  
 **Duration** 8 weeks    
 **Engine:** Custom engine     
-**Play it:**    
 
 ---
 
@@ -35,12 +34,5 @@ I extended the renderer with reflective and glossy materials, glass materials fo
 
 The game is a pong variant where each paddle is a spotlight pointing downward onto the play field. The ball reads the light cast by the spotlights to determine where it should bounce, meaning the ray tracing is directly tied to the game logic rather than just being visual. 
 
----
-## What I Learned
-- **Ray tracing fundamentals:** building on a base ray setup to understand how rays interact with geometry and materials
-- **Materials:** implementing reflective, glossy, and glass materials with physically based behaviour
-- **Lights:** adding point and spot lights and using them both visually and as part of gameplay
-- **Stochastic lighting:** sampling light sources probabilistically to improve rendering quality
-- **Accumulation:** reducing noise over time by accumulating samples across frames
-- **HDR skydome:** using an HDR image as environmental lighting
-- **Sphere primitives:** adding support for non-voxel geometry alongside the voxel world
+
+The more interesting constraint on this project was the requirement to incorporate ray tracing into the gameplay itself rather than just using it as a renderer. The spotlight-as-paddle mechanic came from that: the ball reads the actual light cast by the spotlights to determine where it bounces, so the rendering and the game logic share the same data. On the renderer side, building out reflective, glossy, and glass materials, stochastic lighting, and accumulation gave me a solid grounding in how a ray tracer actually works at the implementation level rather than just the concept level.

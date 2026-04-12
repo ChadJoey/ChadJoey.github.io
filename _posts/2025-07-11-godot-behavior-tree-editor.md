@@ -17,13 +17,14 @@ A behavior tree plugin for Godot, built as a GDExtension in C++. The plugin adds
 
 ## Overview
 
-After getting feedback on a previous project that a behavior tree would have been a better fit for AI than a finite state machine, I decided to actually build one. The goal was a plugin that felt native to Godot: trees are saved as Godot resources, the editor lives in the bottom panel, and condition and action nodes can be scripted in GDScript so designers do not need to touch C++.
+I built a behavior tree plugin for Godot 4 as a GDExtension in C++. It adds a visual graph editor to the Godot editor, a runtime execution system, and a full set of standard node types. The goal was something that felt native to the engine: trees saved as Godot resources, the editor living in the bottom panel, and condition/action nodes scriptable in GDScript so designers never need to touch C++.
+
+The most valuable part of the project was building something that integrates deeply with an existing editor rather than running standalone. Navigating Godot's GDExtension API, working around undocumented engine bugs, and designing for two audiences (C++ programmers and GDScript designers) gave me a much better sense of what plugin and tooling development actually involves.
 
 ---
 ## The Graph Editor
 
-The editor is built on top of Godot's built-in `GraphEdit` node and registers as an editor plugin through the GDExtension API. It lives in the bottom panel and lets you add nodes from a menu, connect them visually, and save and load trees as `.tres` resource files.
-
+The editor is built on Godot's GraphEdit node and registered as an editor plugin through the GDExtension API. Before accepting a connection, it validates that the target node doesn't already have a parent and that the source slot is free, making it impossible to build a malformed tree in the editor.
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
@@ -153,7 +154,7 @@ The plugin covers the standard behavior tree building blocks: sequence, selector
 
 ### Reactive Nodes and the Parallel Problem
 
-Getting the parallel node working initially went fine, but it exposed a problem with the standard sequence and selector that I had not considered: nodes with memory. A standard sequence remembers which child it was on and resumes from there next tick. This is fine in isolation, but when used inside a parallel node it means a branch can stay in a running state even after the conditions that triggered it have changed.
+"Implementing the parallel node surfaced a subtle problem with standard memory-based sequences and selectors: once a branch starts running, it resumes from where it left off next tick. Inside a parallel node, this means a branch can stay active even after the conditions that triggered it have changed."
 
 In the demo below, a timer runs in parallel with a condition check. With standard memory-based nodes, once the sequence begins running the condition branch is not re-evaluated, so the agent never reacts to the player entering its line of sight:
 
@@ -193,13 +194,9 @@ int BT_ReactiveSequenceNode::_update(float dt)
 ---
 ## Saving and Loading
 
-Trees are saved and loaded as Godot `.tres` resource files, which keeps them consistent with how Godot handles its own data and avoids writing a custom parser. Getting there was one of the more technically frustrating parts of the project.
-
-The first issue was that Godot's serialization only applies to nodes in the scene tree. Since the behavior tree exists entirely inside the plugin it had to be serialized manually. After figuring that out I also discovered that `.tres` files cannot be saved directly to the `res://` directory, which caused the save signal to get caught in Godot's early warning system without a clear error message. The fix was adding a check that looks for a `behavior_trees/` subfolder and creates it if it does not exist before saving.
-
-Getting a single resource to save was one thing. Getting an array of resources to save was another. Godot has a concept called sub-resources intended for exactly this, but it did not work. TypedArrays did not work. Dictionaries did not work. After trying every approach I could find in the documentation I took it to the Godot Discord, where someone pointed to a forum post that looked promising. That also did not work, but asking for an explanation of what the approach was actually attempting led me to discover that since Godot 4.3 this functionality had been silently broken. Everything I had tried was correct, it just did not work in the engine version I was using, and because custom GDExtension resource serialization is uncommon it had not been widely reported.
-
-The workaround was overriding `_get()`, `_set()`, and `_get_property_list()`, which are the callbacks Godot uses to determine how to handle individual variables during serialization. Overriding them let me define explicitly how the engine should read and write the resource array, which finally made it work:
+Trees are saved and loaded as standard Godot .tres resource files, keeping them consistent with how the engine handles its own data.
+The main challenge was that Godot's built-in serialization only applies to scene tree nodes. Since the behavior tree lives entirely inside the plugin, I had to hook into the engine's property system manually. I also ran into an engine bug introduced in Godot 4.3 where serializing arrays of custom GDExtension resources was silently broken. TypedArrays, sub-resources, and Dictionaries all failed without useful error messages. It was obscure enough that it had barely been reported.
+The fix was overriding _get(), _set(), and _get_property_list(), which are the callbacks Godot uses when reading and writing properties during serialization. Defining those explicitly gave me control over exactly how the resource array was handled, and it worked.
 
 ```cpp
 void BT_Tree_Resource::_get_property_list(List<PropertyInfo> *p_list) const

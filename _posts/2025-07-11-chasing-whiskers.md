@@ -19,7 +19,7 @@ A comedic action game currently in development for Steam. You play as a grandma 
 ---
 ## Overview
 
-Every cat runs a state machine with six states. Transitions between states are driven by distance thresholds and timers, all configured per-cat through a data asset so designers can tune each cat type without touching code.
+Cat AI for a comedy game lives or dies on feel. The cats need to seem genuinely evasive and a little unpredictable without ever feeling unfair or scripted. Each cat runs a six-state machine covering roaming, caution, fleeing, hiding, following, and patrolling. Transitions are driven by distance thresholds and timers, all exposed through a data asset so designers can tune each cat type independently without touching code.
 
 ```
 states:
@@ -67,8 +67,7 @@ each frame:
 ---
 ## Lévy Flight Movement
 
-Both roaming and fleeing use Lévy flight rather than a simple random walk. The key property of a Lévy distribution is a heavy tail: small steps dominate but occasional large steps are far more probable than under a normal distribution. In practice this means cats spend time in one area before making a sudden long dash, which looks more natural and believable than uniform random movement.
-
+A naive random walk produces movement that looks mechanical, because uniform step lengths don't match how animals actually behave. Lévy flight solves this with a heavy-tailed distribution: most steps are short, but occasional long dashes are far more likely than a normal distribution would produce. In practice cats spend time in one area before suddenly bolting across the room, which reads as much more believable than constant jittery movement.
 Step lengths are sampled using an inverse power-law transform:
 
 ```
@@ -106,7 +105,7 @@ function GenerateFleePoint(origin, awayFromPlayer):
 ---
 ## Jumping and NavLink Integration
 
-Cats can jump between elevated areas of the level using Unreal's nav link system. This was one of the more technically involved parts of the project since hooking custom movement logic into Unreal's nav link flags is not documented anywhere and required reading engine source directly.
+Cats can jump between elevated areas using Unreal's nav link system. Hooking custom movement logic into nav link path flags is not covered in Unreal's documentation, so getting this working required reading engine source directly to understand how off-mesh connection flags are set on path points.
 
 The movement component detects when the current path segment has an off-mesh connection flag set on the path point:
 
@@ -161,7 +160,9 @@ function ShouldUseNavLink(linkLength):
 ---
 ## BOIDS Steering
 
-All cat movement is run through a steering component that combines BOIDS forces with path following. This keeps cats from overlapping each other and makes groups move more naturally:
+All cat movement is run through a steering component that combines BOIDS forces with path following. This keeps cats from overlapping each other and makes groups move more naturally.
+
+Rather than handling separation logic separately per system, all cat movement runs through a single steering component that combines BOIDS forces with path following. This keeps cats from clipping through each other regardless of which state they're in, and makes groups of fleeing or following cats move as a loose crowd rather than a stack.
 
 ```
 function ComputeSteering(nextWaypoint):
@@ -196,7 +197,7 @@ function UpdateNeighbors():
 
 ### Settle System
 
-When multiple cats follow the player, they should stop moving once they have caught up rather than constantly jostling. A cat settles when it detects a settled neighbor or the player directly in front of it within a cone, and that condition holds for a minimum duration. The settle state is cleared immediately when the player starts moving:
+Following cats presented a specific problem: without a stopping condition, a crowd of cats following the player constantly jostle and re-adjust even when fully caught up. The settle system solves this by having cats lock in place when they detect a settled neighbor or the player directly ahead, held for a minimum duration to avoid flickering.
 
 ```
 function UpdateSettleState():
@@ -331,3 +332,8 @@ Paths are saved as data assets and loaded at runtime. The visualizer also has ke
 All cat parameters are stored in a `UCatData` asset rather than hardcoded. Detection radii, movement speeds, Lévy parameters, rest durations, BOIDS weights, hide probabilities, and nav link settings are all exposed through the asset. This lets designers create different cat types and tune them without touching code, and makes it straightforward to add new variants by duplicating an existing asset.
 
 <img src="/assets/img/data-asset.png" alt="Cat data asset" style="display: block;"/>
+
+---
+## Reflection
+
+The most interesting constraint on this project was that the AI had to be fun for the player to play against, not just technically correct. A cat that always found the optimal hiding spot or escape route would be frustrating rather than funny. A lot of the tuning work was deliberately making cats beatable in satisfying ways: the flee angle window, the hide probability falloff, the nav link chance scaling. Getting behavior that felt alive without feeling cheap was the actual design problem underneath all the systems.

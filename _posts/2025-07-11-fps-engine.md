@@ -16,10 +16,12 @@ An 8-week custom C++ engine project built by a team of 6 at BUas, on top of Bee,
 
 My contributions were integrating the Recast navigation library into the engine, building an agent behaviour API on top of it, and creating two demos to showcase the system: a COD Zombies-style demo and a PayDay 2 stealth demo.
 
+At the end of the block the engine was selected as the custom tech for the following group project, one of two engines chosen from across the year.
+
 ---
 ## Recast Navigation
 
-Recast is a navigation library that generates a 3D navmesh from geometry and lets agents traverse it. Integrating it into the engine involved adapting an existing implementation from a teammate's earlier project as a starting point, since documentation and working examples for the library were sparse.
+Recast is an open-source navigation library that generates a 3D navmesh from geometry and handles pathfinding. Integrating it into a custom engine with minimal documentation meant working largely from source and from a partial implementation a teammate had built in a previous project. The end result exposed a clean two-line setup to game-side code:
 
 ![Navmesh generating over the level](/assets/img/navmesh_reload.gif)
 ![Agents traversing the navmesh](/assets/img/navmesh_walkin.gif)
@@ -34,7 +36,7 @@ bee::Engine.ECS().CreateSystem(*model, SOLO_MESH, true);
 
 ### Vertex Transform Fix
 
-One problem encountered early on was that Recast reads raw geometry from the `.gltf` file without applying any node transforms, meaning scale, rotation, and translation defined in Blender were being ignored entirely. To fix this I wrote a function that extracts those transforms from each node and applies them to the vertices before they are passed to Recast:
+The first real issue was that Recast reads raw vertex data from .gltf files without applying node transforms, so any scale, rotation, or translation defined in the modelling tool was silently ignored. The fix was a preprocessing step that extracts each node's transform and applies it to its vertices before the geometry is handed to Recast
 
 ```cpp
 void RecastDetourSystem::TransformVerticesToWorldSpace(
@@ -82,14 +84,13 @@ void RecastDetourSystem::TransformVerticesToWorldSpace(
 
 ### Known Limitations
 
-One limitation I was not able to resolve was generating navmeshes from multiple separate `.gltf` nodes. The system works correctly with a single mesh object, but disconnected geometry either gets ignored or causes incorrect results. The likely cause is either that the engine ignores collision from any primitive beyond index 0, or a limitation within Recast itself for disconnected geometry. Given the constraint this meant level meshes needed to be exported as a single object.
+One limitation I didn't fully resolve was navmesh generation from .gltf files containing multiple disconnected mesh nodes. The system works correctly with a single mesh object. With disconnected geometry, additional nodes are either ignored or produce incorrect results. likely because the engine only reads collision from primitive index 0, though I wasn't able to confirm whether the issue was on the engine side or within Recast itself. The practical workaround was requiring level meshes to be exported as a single object, which was a reasonable constraint given the project scope.
 
 ---
 ## Agent Behaviour API
 
-On top of navigation I built an engine-side API that can be inherited to create different AI behaviours without reimplementing common functionality each time. The idea was that the engine exposes generic building blocks — vision checks, shooting, path following — and each game implements its own behaviour by combining them.
-
-The API lives in the engine and is designed to be inherited by a game-side system:
+On top of navigation I built an API that game-side systems inherit to implement AI behaviour without re-implementing common functionality each time. The idea was that the engine provides generic building blocks, vision detection, path following, physics body setup, shooting. and each game composes them into whatever behaviour it needs.
+The API started intentionally engine-agnostic, but after feedback I shifted toward tighter integration with Bee's own types. That was the right call for this engine, though the inconsistency between older and newer function signatures in the header reflects the refactor happening partway through rather than from the start.
 
 ```cpp
 class AgentBehaviour : public bee::System, public bee::IEntityInspector
@@ -147,7 +148,7 @@ public:
 
 The API started out as general as possible with the intention of being engine-agnostic, but after feedback I shifted toward integrating more Bee-specific types like transforms and Jolt bodies. The inconsistency between older and newer function signatures in the header reflects that shift happening partway through the project.
 
-AI state is stored in an `AgentAi` component with settings grouped by category for both readability and to make eventual serialization easier:
+AI state is stored in an AgentAi component with settings grouped by category. Keeping vision, combat, and movement parameters in separate nested structs made the ImGui panel readable and kept the data organized for eventual serialization:
 
 ```cpp
 struct AgentAi
@@ -210,7 +211,7 @@ All settings are exposed through ImGui, giving designers control over vision ran
 ---
 ## Zombies Demo
 
-The zombies demo is a straightforward showcase of the navigation and agent systems working together. Agents spawn continuously, path to the player using the navmesh, and attack on contact. The player can be hit and agents can be killed.
+The zombies demo is a targeted test of the navigation and combat systems working under load. Agents spawn continuously, path to the player, and attack on contact. The intent was to verify navmesh traversal held up with multiple agents running simultaneously before moving on to more complex behaviour.
 
 <center>
 <figure style="text-align: center;">

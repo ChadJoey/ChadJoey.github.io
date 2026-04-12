@@ -7,7 +7,7 @@ toc: false
 
 ## About the Project
 
-this is a self study project where i explore the workings of RTS formations and grouping. within this project i explore how units move across a field , sort themselfs in formations, and make a dynamic formation that can be tweaked on the fly
+A self-study project exploring RTS movement and formation systems. Units navigate a shared flow field rather than running individual pathfinding, which keeps navigation cheap regardless of unit count. On top of that, a formation system handles how units sort themselves into shapes, with two different assignment algorithms that can be compared directly at runtime.
 
 **Team:** solo      
 **Duration** 8 weeks    
@@ -16,14 +16,12 @@ this is a self study project where i explore the workings of RTS formations and 
 
 ---
 ## Overview
-The project is split into three connected systems: a flow field that handles navigation across the grid, an agent system that moves units through it, and a formation system that decides which unit goes where. The sections below walk through each one.
-
-*(screenshot or gif of units moving)*
+The project is split into three connected systems: a flow field that handles navigation across the grid, an agent system that moves units through it, and a formation system that decides which unit goes where.
 
 ---
 ## Flow Field
 
-The flow field is a grid of tiles. Each tile stores its cost, a direction vector pointing toward the goal, and references to all 8 of its neighbours. On construction the grid is built and neighbour links are set up:
+Individual pathfinding per unit scales poorly in an RTS, running A* for fifty units every frame is expensive, and agents often end up taking identical paths anyway. A flow field solves this by computing navigation once per destination across the whole grid. Every tile stores a direction vector pointing toward the goal, and any number of agents can read from it without additional pathfinding cost.
 
 ```cpp
 if (x - 1 >= 0)
@@ -221,11 +219,11 @@ The spacing, number of units per line, and vertical offset are all exposed throu
 ---
 ## Unit Assignment
 
-Once the formation positions are generated, each unit needs to be assigned to one of them. Two algorithms handle this, switchable via an ImGui toggle.
+Once formation positions are generated, units need to be assigned to them. The naive approach of each unit claiming its nearest open slot produces crossing paths and looks chaotic. Two proper assignment algorithms handle this instead, switchable at runtime via ImGui.
 
 ### Auction Algorithm
 
-Each unassigned unit finds the position that gives it the best value, bids on it by raising its price, and claims it. If a position is already claimed the previous unit gets bumped and has to bid again. This runs incrementally across frames rather than all at once:
+The auction algorithm is an iterative approach: each unit bids on the position that gives it the best value, raising the price on that position as it claims it. If the position was already claimed, the displaced unit re-enters the bidding. Running this incrementally across frames rather than all at once keeps the game responsive during assignment:
 
 ```cpp
 void Formation_field::auction_algorithm(float epsilon)
@@ -295,8 +293,7 @@ void Formation_field::auction_algorithm(float epsilon)
 
 ### Hungarian Algorithm
 
-The Hungarian algorithm finds the globally optimal assignment by building an alternating tree of matches and augmenting paths through it. It is more expensive than the auction approach but guarantees the minimum total travel distance across all units:
-
+The Hungarian algorithm finds the globally optimal assignment. The one that minimises total travel distance across all units simultaneously. It's more expensive than the auction approach but guarantees no crossing paths. For small to medium formation sizes the cost is acceptable and the result is visibly cleaner:
 ```cpp
 void Formation_field::augment()
 {
@@ -389,3 +386,8 @@ void Formation_field::augment()
 }
 ```
 {% include embed/video.html src='/assets/vids/rotating.mp4' title='agents using optimal path' %}
+
+---
+## Reflection
+Reflection
+The most interesting design decision in this project was the unit assignment problem. Getting units into a formation shape is straightforward. Getting them there without crossing paths or producing obviously suboptimal routes requires treating it as a proper assignment problem. Implementing both algorithms back to back made the tradeoff concrete: the auction algorithm is fast and good enough for most cases, while Hungarian is slower but optimal. Having both switchable at runtime made it easy to see exactly where they diverge with larger unit counts and more complex formation shapes.
