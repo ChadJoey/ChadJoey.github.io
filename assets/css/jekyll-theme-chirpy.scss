@@ -267,10 +267,9 @@ a.highlight-card:hover {
 }
 
 .highlight-card-body h3 {
-  font-size: 1rem;
-  color: #ffffff;
-  margin: 0 0 0.6rem;
+  color: #ffffff !important;
 }
+
 
 .highlight-tags {
   display: flex !important;
@@ -282,12 +281,12 @@ a.highlight-card:hover {
 }
 
 .highlight-tag {
+  background: #1f1f1f !important;
+  color: #7dd3fc !important;
+  border: 1px solid #2dd4bf44 !important;
   font-size: 0.7rem !important;
   padding: 2px 8px !important;
   border-radius: 999px !important;
-  background: #1f1f1f !important;
-  color: #cccccc !important;
-  border: 1px solid #555555 !important;
   display: inline-block !important;
   line-height: 1.4 !important;
   height: auto !important;
@@ -295,9 +294,8 @@ a.highlight-card:hover {
 }
 
 .highlight-read-more {
-  font-size: 0.82rem;
-  color: #aaaaaa !important;
-  text-decoration: none !important;
+  color: #2dd4bf !important;
+  font-size: 0.82rem !important;
 }
 
 .project-link {
