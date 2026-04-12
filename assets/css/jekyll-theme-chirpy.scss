@@ -1,10 +1,8 @@
 ---
 ---
 
-@import "main"
-;
+@import "main";
 
-/* Sidebar */
 #sidebar {
   background: #0a0a0a !important;
 }
@@ -22,7 +20,6 @@
   color: #999999 !important;
 }
 
-/* Links and headings */
 a {
   color: #e2e8f0 !important;
 }
@@ -31,7 +28,6 @@ h1, h2, h3 {
   color: #ffffff !important;
 }
 
-/* Buttons */
 .btn.btn-outline-primary {
   border-color: #666666;
   color: #cccccc;
@@ -43,7 +39,6 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* Glow boxes */
 .glow-box {
   border: 1px solid #666666;
   border-radius: 12px;
@@ -52,12 +47,12 @@ h1, h2, h3 {
   box-shadow: 0 0 24px #66666666, inset 0 0 24px #44444422;
 }
 
-.glow-box h1, .glow-box h2 {
+.glow-box h1,
+.glow-box h2 {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* Background grid cards */
 .bg-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -65,7 +60,8 @@ h1, h2, h3 {
   margin-top: 1rem;
 }
 
-.bg-card, a.bg-card {
+.bg-card,
+a.bg-card {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -77,10 +73,184 @@ h1, h2, h3 {
   color: inherit !important;
 }
 
-.bg-card:hover, a.bg-card:hover {
+.bg-card:hover,
+a.bg-card:hover {
   transform: translateY(-3px);
   border-color: #cccccc !important;
   color: inherit !important;
 }
 
-.bg-card img, a.bg-card img
+.bg-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+a.bg-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.bg-card-body {
+  padding: 1rem;
+  text-align: center;
+  flex: 1;
+}
+
+.bg-card-body h3 {
+  font-size: 0.95rem;
+  color: #ffffff;
+  margin: 0 0 0.4rem;
+}
+
+.bg-card-body p {
+  font-size: 0.8rem;
+  color: #999999;
+  margin: 0 0 0.4rem;
+}
+
+.bg-card-body span {
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill {
+  background: #1f1f1f;
+  color: #eeeeee;
+  border: 1px solid #555555;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid #444444;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #141414;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: #cccccc;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 1rem;
+}
+
+.project-card-body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #1f1f1f;
+  color: #cccccc;
+  border: 1px solid #555555;
+}
+
+.project-card.hidden {
+  display: none;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid #777777;
+  background: transparent;
+  color: #cccccc;
+  font-size: 0.8rem;
+  transition: all 0.15s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #777777;
+  color: #ffffff;
+}
+
+.highlight-tag {
+  font-size: 0.7rem !important;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+  background: #1f1f1f !important;
+  color: #cccccc !important;
+  border: 1px solid #555555 !important;
+  display: inline-block !important;
+}
+
+.highlight-read-more {
+  color: #cccccc !important;
+}
+
+.project-link {
+  color: #cccccc !important;
+}
+
+a.highlight-card {
+  background: #141414 !important;
+  border-color: #444444 !important;
+}
+
+a.highlight-card:hover {
+  border-color: #cccccc !important;
+}
+
+.post-tail-wrapper,
+.post-navigation,
+#related-posts,
+.license-wrapper,
+#post-list,
+#panel-wrapper,
+.panel-wrapper {
+  display: none !important;
+}
+
+#main-wrapper .container {
+  max-width: 100% !important;
+}
