@@ -74,13 +74,21 @@ a.bg-card {
 }
 
 .bg-card:hover,
-a.bg-card:hover {
+a.bg-card:hover,
+.project-card:hover,
+a.highlight-card:hover {
   transform: translateY(-3px);
   border-color: #ffffff !important;
   box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
   color: inherit !important;
 }
 
+.bg-card,
+a.bg-card,
+.project-card,
+a.highlight-card {
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
 
 .bg-card img {
   width: 100%;
