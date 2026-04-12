@@ -1,7 +1,8 @@
 ---
 ---
 
-@import "main";
+@import "main"
+;
 
 #sidebar {
   background: #0a0a0a !important;
@@ -25,7 +26,7 @@ a {
 }
 
 h1, h2, h3 {
-  color: #ffffff !important;
+  color: #67e8f9 !important;
 }
 
 .btn.btn-outline-primary {
@@ -40,11 +41,11 @@ h1, h2, h3 {
 }
 
 .glow-box {
-  border: 1px solid #666666;
+  border: 1px solid #2dd4bf !important;
   border-radius: 12px;
   padding: 2rem;
   margin-bottom: 2rem;
-  box-shadow: 0 0 24px #66666666, inset 0 0 24px #44444422;
+  box-shadow: 0 0 18px #2dd4bf55, inset 0 0 18px #2dd4bf11 !important;
 }
 
 .glow-box h1,
@@ -68,26 +69,17 @@ a.bg-card {
   overflow: hidden;
   background: #141414;
   border: 1px solid #444444;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   text-decoration: none !important;
   color: inherit !important;
 }
 
 .bg-card:hover,
-a.bg-card:hover,
-.project-card:hover,
-a.highlight-card:hover {
+a.bg-card:hover {
   transform: translateY(-3px);
   border-color: #ffffff !important;
   box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
   color: inherit !important;
-}
-
-.bg-card,
-a.bg-card,
-.project-card,
-a.highlight-card {
-  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .bg-card img {
@@ -156,7 +148,7 @@ a.bg-card img {
   border-radius: 8px;
   overflow: hidden;
   background: #141414;
-  transition: transform 0.2s, border-color 0.2s;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
@@ -225,49 +217,6 @@ a.bg-card img {
   color: #ffffff;
 }
 
-.highlight-tag {
-  font-size: 0.7rem !important;
-  padding: 2px 8px !important;
-  border-radius: 999px !important;
-  background: #1f1f1f !important;
-  color: #cccccc !important;
-  border: 1px solid #555555 !important;
-  display: inline-block !important;
-}
-
-.highlight-read-more {
-  color: #cccccc !important;
-}
-
-.project-link {
-  color: #cccccc !important;
-}
-
-a.highlight-card {
-  background: #141414 !important;
-  border-color: #444444 !important;
-}
-
-a.highlight-card:hover {
-  border-color: #ffffff !important;
-  box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
-}
-
-.post-tail-wrapper,
-.post-navigation,
-#related-posts,
-.license-wrapper,
-#post-list,
-#panel-wrapper,
-.panel-wrapper {
-  display: none !important;
-}
-
-#main-wrapper .container {
-  max-width: 100% !important;
-}
-
-
 .highlight-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -325,17 +274,49 @@ a.highlight-card:hover {
 }
 
 .highlight-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.8rem;
-  flex: 1;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.4rem !important;
+  margin-bottom: 0.8rem !important;
+  flex: 1 !important;
+  align-items: flex-start !important;
+}
+
+.highlight-tag {
+  font-size: 0.7rem !important;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+  background: #1f1f1f !important;
+  color: #cccccc !important;
+  border: 1px solid #555555 !important;
+  display: inline-block !important;
+  line-height: 1.4 !important;
+  height: auto !important;
+  width: auto !important;
 }
 
 .highlight-read-more {
   font-size: 0.82rem;
   color: #aaaaaa !important;
   text-decoration: none !important;
+}
+
+.project-link {
+  color: #cccccc !important;
+}
+
+.post-tail-wrapper,
+.post-navigation,
+#related-posts,
+.license-wrapper,
+#post-list,
+#panel-wrapper,
+.panel-wrapper {
+  display: none !important;
+}
+
+#main-wrapper .container {
+  max-width: 100% !important;
 }
 
 @media (max-width: 768px) {
