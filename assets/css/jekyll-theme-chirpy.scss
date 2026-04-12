@@ -76,9 +76,11 @@ a.bg-card {
 .bg-card:hover,
 a.bg-card:hover {
   transform: translateY(-3px);
-  border-color: #cccccc !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
   color: inherit !important;
 }
+
 
 .bg-card img {
   width: 100%;
@@ -151,7 +153,8 @@ a.bg-card img {
 
 .project-card:hover {
   transform: translateY(-3px);
-  border-color: #cccccc;
+  border-color: #ffffff;
+  box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
 }
 
 .project-card img {
@@ -238,7 +241,8 @@ a.highlight-card {
 }
 
 a.highlight-card:hover {
-  border-color: #cccccc !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
 }
 
 .post-tail-wrapper,
