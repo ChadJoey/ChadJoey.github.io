@@ -5,6 +5,9 @@ date: 2024-01-01
 toc: false
 ---
 
+{% include embed/video.html src='/assets/vids/pong.mp4' title='Pong gameplay' %}
+
+
 ## About the Project
 
 A voxel ray tracer built on top of a provided base, with a pong game made inside it that uses ray tracing functionality as a core part of the gameplay.
@@ -24,7 +27,6 @@ I extended the renderer with reflective and glossy materials, glass materials fo
 ---
 ## The Game
 
-{% include embed/video.html src='/assets/vids/pong.mp4' title='Pong gameplay' %}
 {% include embed/video.html src='/assets/vids/spotlight.mp4' title='Spotlight' %}
 {% include embed/video.html src='/assets/vids/stochastic-lighting.mp4' title='Stochastic lighting with accumulation' %}
 {% include embed/video.html src='/assets/vids/reflection.mp4' title='Reflective material' %}

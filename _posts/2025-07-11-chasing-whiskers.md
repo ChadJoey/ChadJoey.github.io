@@ -6,6 +6,9 @@ toc: false
 
 ---
 
+*(trailer coming soon)*
+
+
 ## About the Project
 A comedic action game currently in development for Steam. You play as a grandma chasing and catching cats across a series of levels. As the AI programmer my responsibility is the cat AI: how they move, how they react to the player, and how they use the environment to evade capture.
 
@@ -13,8 +16,6 @@ A comedic action game currently in development for Steam. You play as a grandma 
 **Engine:** Unreal Engine 5   
 **Role:** AI programmer   
 **Status:** In development    
-
-*(trailer coming soon)*
 
 ---
 ## Overview

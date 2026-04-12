@@ -5,6 +5,10 @@ date: 2024-01-01
 toc: false
 ---
 
+
+![Navmesh generating over the level](/assets/img/fps-engine-banner.png)
+
+
 ## About the Project
 An 8-week custom C++ engine project built by a team of 6 at BUas, on top of Bee, the university's in-house learning engine which provides a basic set of engine features for students to build upon. The engine, originally developed by team Wasp, was later merged with a graphics team called Firefly and continued as Firewasp. At the end of the block the engine was selected as the custom tech for the next group project.
 

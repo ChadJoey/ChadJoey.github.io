@@ -5,6 +5,17 @@ date: 2024-01-01
 toc: false
 ---
 
+
+<center>
+<figure style="text-align: center;">
+    <video controls muted style="border: 1px white solid; max-width: 100%;">
+        <source src="/assets/vids/Game.mp4" type="video/mp4"/>
+    </video>
+    <figcaption><em>Hard x4 agents playing each other</em></figcaption>
+</figure>
+</center>
+
+
 ## About the Project
 
 Mahjong is an imperfect information game, which makes it a genuinely interesting AI problem. You can only see your own tiles and what opponents have discarded, so any decision has to reason about what might be hidden. This project covers two systems built over 8 weeks: a shanten calculator that measures how far a hand is from winning, and a Monte Carlo AI that uses it to make discard decisions under uncertainty. Three difficulty levels let the approaches be compared directly in gameplay.
@@ -322,18 +333,6 @@ The Hard AI reached shanten 1 quickly and held there, waiting for the specific t
         <source src="/assets/vids/Difficulties.mp4" type="video/mp4"/>
     </video>
     <figcaption><em>Easy, Medium x2, and Hard agents playing each other</em></figcaption>
-</figure>
-</center>
-
-
-Here is a game from start to finish that ends in a Ron
-
-<center>
-<figure style="text-align: center;">
-    <video controls muted style="border: 1px white solid; max-width: 100%;">
-        <source src="/assets/vids/Game.mp4" type="video/mp4"/>
-    </video>
-    <figcaption><em>Hard x4 agents playing each other</em></figcaption>
 </figure>
 </center>
 

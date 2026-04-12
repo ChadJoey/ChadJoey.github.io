@@ -5,17 +5,6 @@ date: 2024-01-01
 toc: false
 ---
 
-## About the Project
-My intake assignment for BUas, built before starting the programme. Coming from a background entirely in Unity, this was my first time writing C++. The brief was a game around the theme of "bounce". I built a Doodle Jump-style endless platformer with procedural level generation, object pooling, and a hand-rolled component system.
-**Team:** Solo  
-**Engine:** Custom template (provided by BUas)  
-**Source code:** [GitHub](https://github.com/ChadJoey/BuasIntake) 
-
----
-## The Game
-
-A Doodle Jump inspired endless platformer. The player bounces upward through platforms, avoids enemies, and deals with breaking platforms that disappear after being landed on. The game has three distinct level phases that cycle as the player climbs, each changing how the level is generated.
-
 <center>
 <figure style="text-align: center;">
     <video controls style="border: 1px white solid; max-width: 100%;">
@@ -24,6 +13,14 @@ A Doodle Jump inspired endless platformer. The player bounces upward through pla
     <figcaption><em>doodle jumping</em></figcaption>
 </figure>
 </center>
+
+
+## About the Project
+My intake assignment for BUas, built before starting the programme. Coming from a background entirely in Unity, this was my first time writing C++. The brief was a game around the theme of "bounce". I built a Doodle Jump-style endless platformer with procedural level generation, object pooling, and a hand-rolled component system.
+**Team:** Solo  
+**Engine:** Custom template (provided by BUas)  
+**Source code:** [GitHub](https://github.com/ChadJoey/BuasIntake) 
+
 
 ---
 ## Component System

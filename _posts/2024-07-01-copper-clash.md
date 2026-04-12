@@ -5,6 +5,9 @@ date: 2024-01-01
 toc: false
 ---
 
+{% include embed/youtube.html id='XiE5Psd2Xdc' %}
+
+
 ## About the Project
 
 Copper Clash is a last-man-standing racing game made by 13 first-year students at BUas, inspired by the PS2 game Mashed. Up to 4 local players race through a dystopian industrial wasteland, using weapons to eliminate each other rather than just racing to the finish.
@@ -18,14 +21,6 @@ Copper Clash is a last-man-standing racing game made by 13 first-year students a
 ## My Contributions
 
 My two main contributions were the spline-based track tool used by the designers and artists to build the levels, and the checkpoint and lap system.
-
----
-
-## The Game
-
-Copper Clash was my first team project and the first shipped game I made with other people.
-
-{% include embed/youtube.html id='XiE5Psd2Xdc' %}
 
 
 ---

@@ -5,6 +5,9 @@ date: 2024-01-01
 toc: false
 ---
 
+![Navmesh generating over the level](/assets/img/behavior-tree-banner.png)
+
+
 ## About the Project
 
 A behavior tree plugin for Godot, built as a GDExtension in C++. The plugin adds a visual graph editor to the Godot editor for building and saving behavior trees, a runtime system for executing them, and a set of built-in node types covering the standard behavior tree building blocks.
