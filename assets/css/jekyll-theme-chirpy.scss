@@ -408,3 +408,9 @@ a.highlight-card:hover {
     line-height: 1.5 !important;
   }
 }
+
+/* Hide RSS feed button from sidebar */
+a[href$="/feed.xml"],
+a[href$="feed.xml"] {
+  display: none !important;
+}

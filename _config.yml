@@ -16,7 +16,7 @@ timezone: Europe/Amsterdam
 
 title: Joey van Haren # the main title
 
-tagline: Games Programming student at Berda University of Applies Sciences # it will display as the subtitle
+tagline: Games Programming student at BUas, specializing in gameplay and AI systems. # it will display as the subtitle
 
 description: temporary and that # used by seo meta and the atom feed
   
@@ -29,7 +29,8 @@ github:
   username: ChadJoey # change to your GitHub username
 
 linkedin:
-  username: joey van Haren
+  username: joey-van-Haren
+
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
