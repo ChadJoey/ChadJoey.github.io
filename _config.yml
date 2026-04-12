@@ -28,23 +28,17 @@ url: "https://ChadJoey.github.io"
 github:
   username: ChadJoey # change to your GitHub username
 
-twitter:
-  username: HarenJoey # change to your Twitter username
-  
 linkedin:
   username: joey van Haren
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Joey van Haren
-  email: joeyvharen55@gmail.com # change to your email address
+  email: joeyvharen55@gmail.com
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
     # The first element serves as the copyright owner's link
-    - https://x.com/HarenJoey # change to your Twitter homepage
     - https://github.com/ChadJoey # change to your GitHub homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
     - https://www.linkedin.com/in/joey-van-haren
 
 # Site Verification Settings
