@@ -214,3 +214,97 @@ panel-wrapper,
 #main-wrapper .container {
   max-width: 100% !important;
 }
+
+
+/* Greyscale palette */
+:root {
+  --link-color: #d1d5db;
+}
+
+/* Sidebar */
+#sidebar {
+  background: #111111 !important;
+}
+
+#sidebar .nav-link.active,
+#sidebar a:hover {
+  color: #ffffff !important;
+}
+
+#sidebar .site-title a {
+  color: #ffffff !important;
+}
+
+#sidebar .site-subtitle {
+  color: #888888 !important;
+}
+
+a {
+  color: #d1d5db !important;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #f1f5f9 !important;
+}
+
+/* Glow boxes */
+.glow-box {
+  border-color: #444444 !important;
+  box-shadow: 0 0 18px #44444455, inset 0 0 18px #44444411 !important;
+}
+
+/* Cards */
+.bg-card, a.bg-card,
+.project-card,
+a.highlight-card {
+  background: #1a1a1a !important;
+  border-color: #333333 !important;
+}
+
+.bg-card:hover, a.bg-card:hover,
+.project-card:hover,
+a.highlight-card:hover {
+  border-color: #888888 !important;
+}
+
+/* Tags */
+.bg-card-body span,
+.project-tag,
+.highlight-tag,
+.skill {
+  background: #222222 !important;
+  color: #aaaaaa !important;
+  border-color: #44444466 !important;
+}
+
+/* Skills */
+.skill {
+  color: #cccccc !important;
+}
+
+/* Read more / links */
+.highlight-read-more,
+.project-link {
+  color: #aaaaaa !important;
+}
+
+/* Filter buttons */
+.filter-btn {
+  border-color: #555555 !important;
+  color: #aaaaaa !important;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: #555555 !important;
+  color: #ffffff !important;
+}
+
+/* Background card body text */
+.bg-card-body h3 {
+  color: #e2e8f0 !important;
+}
+
+.bg-card-body p {
+  color: #888888 !important;
+}
