@@ -6,91 +6,6 @@ order: 1
 toc: false
 ---
 
-
-<style>
-#page-wrapper, .container-fluid, main.col-12 {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding-right: 0 !important;
-}
-
-#main-wrapper .container {
-  max-width: 100% !important;
-}
-
-.page-inner {
-  max-width: 100% !important;
-}
-
-.col-xl-11, .col-xl-9, .col-lg-11, .col-lg-9 {
-  width: 100% !important;
-  max-width: 100% !important;
-  flex: 0 0 100% !important;
-}
-
-.glow-box {
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  border: 1px solid #2dd4bf;
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 0 18px #2dd4bf55, inset 0 0 18px #2dd4bf11;
-}
-.glow-box h1, .glow-box h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-.bg-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-a.bg-card {
-  display: flex !important;
-  flex-direction: column !important;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #0f1e2a;
-  border: 1px solid #1e3a4a;
-  transition: transform 0.2s, border-color 0.2s;
-  text-decoration: none !important;
-  color: inherit !important;
-}
-a.bg-card:hover {
-  transform: translateY(-3px);
-  border-color: #2dd4bf;
-}
-.bg-card-img {
-  width: 100%;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
-}
-.bg-card-body { padding: 1rem; text-align: center; }
-.bg-card-body h3 { font-size: 0.95rem; color: #e2e8f0; margin: 0 0 0.4rem; }
-.bg-card-body p { font-size: 0.8rem; color: #94a3b8; margin: 0 0 0.4rem; }
-.bg-card-body span { font-size: 0.8rem; color: #2dd4bf; }
-.skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
-.skill {
-  background: #1e3a4a;
-  color: #7dd3fc;
-  border: 1px solid #2dd4bf44;
-  border-radius: 6px;
-  padding: 4px 12px;
-  font-size: 0.85rem;
-  font-family: monospace;
-}
-@media (max-width: 768px) {
-  .bg-grid { grid-template-columns: 1fr; }
-  .glow-box { padding: 1.5rem 1rem; }
-  .bg-card-img { height: 200px; }
-  .skills-list { justify-content: center; }
-}
-</style>
-
 <div class="glow-box">
   <h1>Who am I?</h1>
   <p>I'm a third-year Games Programming student at Breda University of Applied Sciences (BUas), specializing in gameplay and AI systems. Games have been a passion of mine since I was young, not just playing them but wanting to understand how they work and eventually build them myself.</p>
@@ -106,7 +21,7 @@ a.bg-card:hover {
       <div class="bg-card-body">
         <h3>Breda University of Applied Sciences</h3>
         <p>Game Technologies Bachelor's Degree</p>
-        <span>2023 – Present</span>
+        <span>2023 - Present</span>
       </div>
     </a>
     <a href="https://www.technova.nl" target="_blank" class="bg-card">
@@ -114,7 +29,7 @@ a.bg-card:hover {
       <div class="bg-card-body">
         <h3>Techova College</h3>
         <p>MBO Game Developer</p>
-        <span>2018 – 2021</span>
+        <span>2018 - 2021</span>
       </div>
     </a>
     <a href="https://www.chimpworksgames.com" target="_blank" class="bg-card">
@@ -122,7 +37,7 @@ a.bg-card:hover {
       <div class="bg-card-body">
         <h3>Chimp Works Games</h3>
         <p>Internship</p>
-        <span>2021 – 2021</span>
+        <span>2021 - 2021</span>
       </div>
     </a>
   </div>

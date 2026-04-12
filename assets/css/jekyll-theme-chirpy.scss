@@ -1,8 +1,7 @@
 ---
 ---
 
-@import "main"
-;
+@import "main";
 
 #sidebar {
   background: #0a0a0a !important;
@@ -321,6 +320,45 @@ a.highlight-card:hover {
 
 @media (max-width: 768px) {
   .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Home page */
+.home-intro {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.home-intro p {
+  color: #999999;
+  font-size: 1rem;
+}
+
+.highlighted-projects {
+  margin-top: 2rem;
+}
+
+.highlighted-projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* About page bg-grid override */
+.bg-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Card title colours */
+.highlight-card-body h3 {
+  color: #ffffff !important;
+}
+
+.bg-card-body h3 {
+  color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+  .bg-grid {
     grid-template-columns: 1fr;
   }
 }
