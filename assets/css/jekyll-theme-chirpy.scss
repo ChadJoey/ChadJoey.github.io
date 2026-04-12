@@ -414,3 +414,11 @@ a[href$="/feed.xml"],
 a[href$="feed.xml"] {
   display: none !important;
 }
+
+#sidebar .site-title,
+#sidebar .site-subtitle {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding-right: 0.5rem;
+}
