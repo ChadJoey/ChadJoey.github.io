@@ -266,3 +266,80 @@ a.highlight-card:hover {
 #main-wrapper .container {
   max-width: 100% !important;
 }
+
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+a.highlight-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #141414;
+  border: 1px solid #444444;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+a.highlight-card:hover {
+  transform: translateY(-3px);
+  border-color: #ffffff !important;
+  box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
+}
+
+.highlight-card-img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.highlight-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #44444488;
+  font-size: 0.8rem;
+}
+
+.highlight-card-body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-card-body h3 {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0 0 0.6rem;
+}
+
+.highlight-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+  flex: 1;
+}
+
+.highlight-read-more {
+  font-size: 0.82rem;
+  color: #aaaaaa !important;
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
