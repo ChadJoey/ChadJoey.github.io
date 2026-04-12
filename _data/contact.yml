@@ -14,11 +14,11 @@
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/joey-van-haren"
 
-- type: email
+- type: gmail
   icon: "fas fa-envelope"
-  noblank: true
-  url: "https://mail.google.com/mail/?view=cm&to=joeyvharen55@gmail.com"          # Fill with your Linkedin homepage
-#
+  url: "https://mail.google.com/mail/?view=cm&to=joeyvharen55@gmail.com"
+
+
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
