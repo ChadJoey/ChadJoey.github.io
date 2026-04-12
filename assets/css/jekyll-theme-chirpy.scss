@@ -5,7 +5,6 @@
 
 #sidebar {
   background: #0a0a0a !important;
-  width: 15% !important;
 }
 
 #sidebar .nav-link.active,
@@ -313,10 +312,6 @@ a.highlight-card:hover {
   display: none !important;
 }
 
-#main-wrapper {
-  margin-left: 15% !important;
-}
-
 
 #main-wrapper .container {
   max-width: 100% !important;
@@ -419,12 +414,4 @@ a.highlight-card:hover {
 a[href$="/feed.xml"],
 a[href$="feed.xml"] {
   display: none !important;
-}
-
-#sidebar .site-title,
-#sidebar .site-subtitle {
-  word-break: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-  padding-right: 0.5rem;
 }
