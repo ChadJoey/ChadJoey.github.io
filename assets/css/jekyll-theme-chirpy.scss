@@ -45,7 +45,14 @@ h1, h2, h3 {
   padding: 2rem;
   margin-bottom: 2rem;
   box-shadow: 0 0 24px #66666666, inset 0 0 24px #44444422;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
+
+.glow-box:hover {
+  border-color: #ffffff;
+  box-shadow: 0 0 24px #ffffff44, inset 0 0 24px #ffffff11;
+}
+
 
 .glow-box h1,
 .glow-box h2 {
@@ -74,7 +81,9 @@ a.bg-card {
 }
 
 .bg-card:hover,
-a.bg-card:hover {
+a.bg-card:hover,
+.project-card:hover,
+a.highlight-card:hover {
   transform: translateY(-3px);
   border-color: #ffffff !important;
   box-shadow: 0 0 18px #ffffff44, inset 0 0 18px #ffffff11;
