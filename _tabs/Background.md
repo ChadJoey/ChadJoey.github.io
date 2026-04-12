@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Background
 icon: fas fa-user
 order: 3
 toc: false
