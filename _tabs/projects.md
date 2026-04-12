@@ -202,7 +202,7 @@ toc: false
 </a>
 
 <a href="/posts/chasing-whiskers/" class="project-card">
-<div class="project-card-img" style="background-image: url('/assets/img/copper.png')"></div>
+<div class="project-card-img" style="background-image: url('/assets/img/chasing-banner.png')"></div>
   <div class="project-card-body">
     <h3>Chasing Whiskers</h3>
     <div class="project-meta">
@@ -210,9 +210,9 @@ toc: false
       <span>3rd year</span>
     </div>
     <div class="project-tags">
-      <span class="project-tag">Custom engine</span>
+      <span class="project-tag">Unreal</span>
       <span class="project-tag">C++</span>
-      <span class="project-tag">RTS</span>
+      <span class="project-tag">AI</span>
     </div>
     <p>Chasing Whiskers is a fun action adventure where you try to find you're lost cat in the cat dimention after having lost it. in this world a mysterious tanuki helps you find you're cat but he does not work for free.</p>
   </div>
