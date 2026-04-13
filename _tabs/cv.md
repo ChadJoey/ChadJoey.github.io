@@ -88,7 +88,7 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">Mahjong AI</span>
+      <span class="cv-role"><a href="/posts/mahjong-ai/">Mahjong AI</a></span>
         <span class="cv-company">· Unreal Engine 5, C++</span>
       </div>
       <span class="cv-date">2024</span>
@@ -105,7 +105,7 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">Godot Behaviour Tree Plugin</span>
+        <span class="cv-role"><a href="/posts/godot-behavior-tree-editor/">Godot Behaviour Tree Plugin</a></span>
         <span class="cv-company">· Godot 4, GDExtension, C++</span>
       </div>
       <span class="cv-date">2024</span>
@@ -122,7 +122,7 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">FPS Engine</span>
+        <span class="cv-role"><a href="/posts/fps-engine/">FPS Engine</a></span>
         <span class="cv-company">· Custom C++ (Firewasp), Team of 6</span>
       </div>
       <span class="cv-date">2024</span>
@@ -268,4 +268,14 @@ toc: false
   border-top: 1px solid #2a2a2a;
   margin: 1.2rem 0;
 }
+
+.cv-role a {
+  color: #2dd4bf !important;
+  text-decoration: none;
+}
+
+.cv-role a:hover {
+  text-decoration: underline;
+}
+
 </style>
