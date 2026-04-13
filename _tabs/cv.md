@@ -122,15 +122,16 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">RTS Formations</span>
-        <span class="cv-company">· Custom C++ Engine</span>
+        <span class="cv-role">FPS Engine</span>
+        <span class="cv-company">· Custom C++ (Firewasp), Team of 6</span>
       </div>
       <span class="cv-date">2024</span>
     </div>
     <ul class="cv-list">
-      <li>Flow field navigation using Dijkstra's algorithm shared across all agents</li>
-      <li>Five formation shapes with runtime rotation and tunable parameters</li>
-      <li>Auction algorithm and Hungarian algorithm for unit assignment, switchable at runtime</li>
+      <li>Integrated Recast/Detour into a custom engine with no documentation, working largely from source</li>
+      <li>Built a reusable agent behaviour API with vision frustum, detection meter, pathfinding, and combat</li>
+      <li>Shipped a COD Zombies navigation stress test and a full PayDay 2-style stealth demo</li>
+      <li>Engine was selected as custom tech for the following year-group project</li>
     </ul>
   </div>
 
