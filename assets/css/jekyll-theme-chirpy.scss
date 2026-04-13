@@ -1,7 +1,10 @@
 ---
 ---
 
-@import "main";
+@import "main"
+;
+
+/* ─── Sidebar ─────────────────────────────────────────────── */
 
 #sidebar {
   background: #0a0a0a !important;
@@ -18,7 +21,13 @@
 
 #sidebar .site-subtitle {
   color: #999999 !important;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding-right: 0.5rem;
 }
+
+/* ─── Global ──────────────────────────────────────────────── */
 
 a {
   color: #e2e8f0 !important;
@@ -39,6 +48,39 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
+/* ─── Hide unwanted elements ──────────────────────────────── */
+
+.post-tail-wrapper,
+.post-navigation,
+#related-posts,
+.license-wrapper,
+#post-list,
+#panel-wrapper,
+.panel-wrapper {
+  display: none !important;
+}
+
+a[href$="/feed.xml"],
+a[href$="feed.xml"] {
+  display: none !important;
+}
+
+/* ─── Layout ──────────────────────────────────────────────── */
+
+#main-wrapper .container,
+#main-wrapper .container-fluid,
+#main-wrapper .container-xxl {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+#main-wrapper {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* ─── Glow box ────────────────────────────────────────────── */
+
 .glow-box {
   border: 1px solid #2dd4bf !important;
   border-radius: 12px;
@@ -53,9 +95,11 @@ h1, h2, h3 {
   margin-bottom: 1.5rem;
 }
 
+/* ─── Background grid (About / Background page) ───────────── */
+
 .bg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 1rem;
 }
@@ -95,6 +139,14 @@ a.bg-card img {
   display: block;
 }
 
+.bg-card-img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
 .bg-card-body {
   padding: 1rem;
   text-align: center;
@@ -103,7 +155,7 @@ a.bg-card img {
 
 .bg-card-body h3 {
   font-size: 0.95rem;
-  color: #ffffff;
+  color: #ffffff !important;
   margin: 0 0 0.4rem;
 }
 
@@ -117,6 +169,8 @@ a.bg-card img {
   font-size: 0.8rem;
   color: #cccccc;
 }
+
+/* ─── Skills ──────────────────────────────────────────────── */
 
 .skills-list {
   display: flex;
@@ -134,6 +188,8 @@ a.bg-card img {
   font-size: 0.85rem;
   font-family: monospace;
 }
+
+/* ─── Project grid (Projects page) ───────────────────────── */
 
 .project-grid {
   display: grid;
@@ -192,6 +248,8 @@ a.bg-card img {
   display: none;
 }
 
+/* ─── Filter bar ──────────────────────────────────────────── */
+
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -216,9 +274,11 @@ a.bg-card img {
   color: #ffffff;
 }
 
+/* ─── Highlight grid (Home page) ──────────────────────────── */
+
 .highlight-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1.5rem;
 }
 
@@ -242,7 +302,7 @@ a.highlight-card:hover {
 
 .highlight-card-img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
@@ -250,7 +310,7 @@ a.highlight-card:hover {
 
 .highlight-placeholder {
   width: 100%;
-  height: 180px;
+  height: 220px;
   background: #1a1a1a;
   display: flex;
   align-items: center;
@@ -270,13 +330,11 @@ a.highlight-card:hover {
   color: #ffffff !important;
 }
 
-
 .highlight-tags {
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 0.4rem !important;
   margin-bottom: 0.8rem !important;
-  flex: 1 !important;
   align-items: flex-start !important;
 }
 
@@ -284,8 +342,8 @@ a.highlight-card:hover {
   background: #1f1f1f !important;
   color: #7dd3fc !important;
   border: 1px solid #2dd4bf44 !important;
-  font-size: 0.7rem !important;
-  padding: 2px 8px !important;
+  font-size: 0.78rem !important;
+  padding: 3px 10px !important;
   border-radius: 999px !important;
   display: inline-block !important;
   line-height: 1.4 !important;
@@ -302,80 +360,8 @@ a.highlight-card:hover {
   color: #cccccc !important;
 }
 
-.post-tail-wrapper,
-.post-navigation,
-#related-posts,
-.license-wrapper,
-#post-list,
-#panel-wrapper,
-.panel-wrapper {
-  display: none !important;
-}
+/* ─── Feature list on home cards ─────────────────────────── */
 
-
-#main-wrapper .container,
-#main-wrapper .container-fluid,
-#main-wrapper .container-xxl {
-  max-width: 1800px !important;
-}
-
-.highlight-grid {
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-}
-
-/* Home page */
-.home-intro {
-  text-align: center;
-  padding: 2rem 0 1rem;
-}
-
-.home-intro p {
-  color: #999999;
-  font-size: 1rem;
-}
-
-.highlighted-projects {
-  margin-top: 2rem;
-}
-
-.highlighted-projects h2 {
-  margin-bottom: 1.5rem;
-}
-
-/* About page bg-grid override */
-.bg-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-/* Card title colours */
-.highlight-card-body h3 {
-  color: #ffffff !important;
-}
-
-.bg-card-body h3 {
-  color: #ffffff !important;
-}
-
-@media (max-width: 768px) {
-  .bg-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.bg-card-img {
-  width: 100%;
-  height: 160px;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
-}
-
-/* Bigger homepage cards */
-.highlighted-projects .highlight-card-img {
-  height: 220px;
-}
-
-/* Feature list on cards */
 .card-features {
   list-style: none;
   padding: 0;
@@ -396,37 +382,48 @@ a.highlight-card:hover {
   color: #2dd4bf;
 }
 
-/* Larger, more visible tags */
-.highlight-tag {
-  font-size: 0.78rem !important;
-  padding: 3px 10px !important;
+/* ─── Home page intro ─────────────────────────────────────── */
+
+.home-intro {
+  text-align: center;
+  padding: 2rem 0 1rem;
 }
 
-/* Mobile: fix code block font size */
+.home-intro p {
+  color: #999999;
+  font-size: 1rem;
+}
+
+.highlighted-projects {
+  margin-top: 2rem;
+}
+
+.highlighted-projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* ─── Mobile ──────────────────────────────────────────────── */
+
 @media (max-width: 768px) {
+  .highlight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bg-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card-img {
+    height: 160px;
+  }
+
   pre, pre code, .highlight code {
     font-size: 0.7rem !important;
     line-height: 1.5 !important;
   }
-}
-
-/* Hide RSS feed button from sidebar */
-a[href$="/feed.xml"],
-a[href$="feed.xml"] {
-  display: none !important;
-}
-
-
-.highlighted-projects .highlight-card-img {
-  height: 260px;
-}
-
-@media (min-width: 1800px) {
-  #sidebar {
-    width: 300px !important;
-  }
 
   #main-wrapper {
-    margin-left: 300px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
   }
 }
