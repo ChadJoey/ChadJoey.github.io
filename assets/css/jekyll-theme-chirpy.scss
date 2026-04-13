@@ -313,14 +313,14 @@ a.highlight-card:hover {
 }
 
 
-#main-wrapper .container {
-  max-width: 100% !important;
+#main-wrapper .container,
+#main-wrapper .container-fluid,
+#main-wrapper .container-xxl {
+  max-width: 1800px !important;
 }
 
-@media (max-width: 768px) {
-  .highlight-grid {
-    grid-template-columns: 1fr;
-  }
+.highlight-grid {
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
 }
 
 /* Home page */
@@ -414,4 +414,19 @@ a.highlight-card:hover {
 a[href$="/feed.xml"],
 a[href$="feed.xml"] {
   display: none !important;
+}
+
+
+.highlighted-projects .highlight-card-img {
+  height: 260px;
+}
+
+@media (min-width: 1800px) {
+  #sidebar {
+    width: 300px !important;
+  }
+
+  #main-wrapper {
+    margin-left: 300px !important;
+  }
 }
