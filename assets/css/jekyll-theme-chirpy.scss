@@ -466,3 +466,10 @@ a.highlight-card:hover {
   font-size: 0.8rem;
   color: #666666;
 }
+
+#search,
+#search-results,
+.search-trigger,
+nav.breadcrumb {
+  display: none !important;
+}
