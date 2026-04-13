@@ -1,14 +1,5 @@
 ---
 layout: page
-title: Projects
-icon: fas fa-gamepad
-order: 3
-toc: false
----
-
-
----
-layout: page
 title: CV
 icon: fas fa-file-alt
 order: 4
