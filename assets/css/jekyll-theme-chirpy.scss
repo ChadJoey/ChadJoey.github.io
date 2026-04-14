@@ -473,3 +473,27 @@ a.highlight-card:hover {
 nav.breadcrumb {
   display: none !important;
 }
+
+
+.highlight-card,
+.project-card {
+  position: relative;
+}
+
+.card-video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-video-preview.visible {
+  opacity: 1;
+}
