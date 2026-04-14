@@ -2,7 +2,7 @@
 layout: page
 title: CV
 icon: fas fa-file-alt
-order: 3
+order: 4
 toc: false
 ---
 
@@ -16,6 +16,10 @@ toc: false
     <span class="cv-sep">·</span>
     <a href="https://github.com/ChadJoey" target="_blank">github.com/ChadJoey</a>
   </div>
+  <div class="cv-download-bar">
+    <a href="/assets/pdf/JoeyVanHaren-CV.pdf" download class="cv-btn">⬇ Download PDF</a>
+    <a href="/assets/pdf/JoeyVanHaren-CV.pdf" target="_blank" class="cv-btn cv-btn-outline">Open in new tab</a>
+  </div>
 </div>
 
 <div class="glow-box">
@@ -24,17 +28,17 @@ toc: false
 </div>
 
 <div class="glow-box">
-  <h2>Experience</h2>
+  <h2>Projects</h2>
 
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">AI Programmer</span>
-        <span class="cv-company">· Chasing Whiskers (Student Project, BUas)</span>
+        <span class="cv-role"><a href="/posts/chasing-whiskers/">Chasing Whiskers</a></span>
+        <span class="cv-company">· Unreal Engine 5, C++</span>
       </div>
       <span class="cv-date">2024 – Present</span>
     </div>
-    <p class="cv-body">Comedy action game in development for Steam. Responsible for the full cat AI system in Unreal Engine 5.</p>
+    <p class="cv-body">Comedy action game in development for Steam. Responsible for the full cat AI system.</p>
     <ul class="cv-list">
       <li>Designed and implemented a six-state finite state machine covering roaming, caution, fleeing, hiding, following, and patrolling</li>
       <li>Built Lévy flight movement for naturalistic roaming and directionally biased fleeing</li>
@@ -51,17 +55,14 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">AI & Engine Programmer</span>
-        <span class="cv-company">· Firewasp Engine + Nakon (Student Project, BUas)</span>
+        <span class="cv-role"><a href="/posts/nakon/">Nakon</a></span>
+        <span class="cv-company">· Custom C++ Engine (Firewasp)</span>
       </div>
       <span class="cv-date">2024</span>
     </div>
-    <p class="cv-body">8-week custom C++ engine sprint followed by an 8-week game built on top of it. Engine was selected as custom tech for the following group project.</p>
+    <p class="cv-body">First-person horde shooter inspired by Call of Duty Zombies, built on a custom engine over 8 weeks.</p>
     <ul class="cv-list">
-      <li>Integrated the Recast/Detour navigation library into the custom engine from source</li>
-      <li>Built an agent behaviour API covering vision detection, pathfinding, physics body setup, and combat</li>
-      <li>Created a COD Zombies-style demo and a PayDay 2 stealth demo to showcase the system</li>
-      <li>Built the interactables system for Nakon: wall buys, perk machines, and enemy power-up drops</li>
+      <li>Built the interactables system: wall buys, perk machines, and enemy power-up drops</li>
       <li>Implemented three enemy variants with per-wave health scaling and head hitbox detection</li>
       <li>Extended crowd navigation with surface clamping to prevent agents drifting off navmesh edges</li>
     </ul>
@@ -72,23 +73,7 @@ toc: false
   <div class="cv-entry">
     <div class="cv-entry-header">
       <div>
-        <span class="cv-role">Internship – Game Developer</span>
-        <span class="cv-company">· ChimpWorks Games</span>
-      </div>
-      <span class="cv-date">2021</span>
-    </div>
-    <p class="cv-body">First professional game development experience. Contributed to live projects and gained grounding in studio workflow and tooling.</p>
-  </div>
-
-</div>
-
-<div class="glow-box">
-  <h2>Projects</h2>
-
-  <div class="cv-entry">
-    <div class="cv-entry-header">
-      <div>
-      <span class="cv-role"><a href="/posts/mahjong-ai/">Mahjong AI</a></span>
+        <span class="cv-role"><a href="/posts/mahjong-ai/">Mahjong AI</a></span>
         <span class="cv-company">· Unreal Engine 5, C++</span>
       </div>
       <span class="cv-date">2024</span>
@@ -133,6 +118,22 @@ toc: false
       <li>Shipped a COD Zombies navigation stress test and a full PayDay 2-style stealth demo</li>
       <li>Engine was selected as custom tech for the following year-group project</li>
     </ul>
+  </div>
+
+</div>
+
+<div class="glow-box">
+  <h2>Experience</h2>
+
+  <div class="cv-entry">
+    <div class="cv-entry-header">
+      <div>
+        <span class="cv-role">Internship – Game Developer</span>
+        <span class="cv-company">· ChimpWorks Games</span>
+      </div>
+      <span class="cv-date">2021</span>
+    </div>
+    <p class="cv-body">First professional game development experience. Contributed to live projects and gained grounding in studio workflow and tooling.</p>
   </div>
 
 </div>
@@ -210,6 +211,39 @@ toc: false
   color: #444444;
 }
 
+.cv-download-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.cv-btn {
+  padding: 0.5rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  text-decoration: none !important;
+  background: #2dd4bf;
+  color: #0a0a0a !important;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.cv-btn:hover {
+  opacity: 0.85;
+}
+
+.cv-btn-outline {
+  background: transparent;
+  color: #2dd4bf !important;
+  border: 1px solid #2dd4bf;
+}
+
+.cv-btn-outline:hover {
+  background: #2dd4bf22;
+  opacity: 1;
+}
+
 .cv-entry {
   margin-bottom: 1.2rem;
 }
@@ -231,6 +265,15 @@ toc: false
   font-weight: bold;
   color: #ffffff;
   font-size: 0.95rem;
+}
+
+.cv-role a {
+  color: #2dd4bf !important;
+  text-decoration: none;
+}
+
+.cv-role a:hover {
+  text-decoration: underline;
 }
 
 .cv-company {
@@ -268,14 +311,4 @@ toc: false
   border-top: 1px solid #2a2a2a;
   margin: 1.2rem 0;
 }
-
-.cv-role a {
-  color: #2dd4bf !important;
-  text-decoration: none;
-}
-
-.cv-role a:hover {
-  text-decoration: underline;
-}
-
 </style>
