@@ -9,7 +9,7 @@ toc: false
 <div class="glow-box">
   <div class="highlight-grid">
 
-    <a href="/posts/copper-clash/" class="highlight-card">
+    <a href="/posts/copper-clash/" class="highlight-card" data-video="/assets/vids/CopperClash.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/copper.png')"></div>
       <div class="highlight-card-body">
         <h3>Copper Clash</h3>
@@ -22,7 +22,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/godot-behavior-tree-editor/" class="highlight-card">
+    <a href="/posts/godot-behavior-tree-editor/" class="highlight-card" data-video="/assets/vids/save_load.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/behavior-tree-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Godot Behavior Tree</h3>
@@ -35,7 +35,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/nakon/" class="highlight-card">
+    <a href="/posts/nakon/" class="highlight-card" data-video="/assets/vids/Nakon.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/nakon-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Nakon</h3>
@@ -48,7 +48,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/mahjong-ai/" class="highlight-card">
+    <a href="/posts/mahjong-ai/" class="highlight-card" data-video="/assets/vids/Game.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/mahjong-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Mahjong AI</h3>
@@ -61,7 +61,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/rts-formations/" class="highlight-card">
+    <a href="/posts/rts-formations/" class="highlight-card" data-video="/assets/vids/presets.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/rts-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>RTS Formations</h3>
@@ -74,7 +74,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/chasing-whiskers/" class="highlight-card">
+    <a href="/posts/chasing-whiskers/" class="highlight-card" data-video="/assets/vids/Hiding.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/chasing-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Chasing Whiskers</h3>
@@ -87,7 +87,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/pitfall/" class="highlight-card">
+    <a href="/posts/pitfall/" class="highlight-card" data-video="/assets/vidsPitfallvid3.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/pitfall-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Pitfall</h3>
@@ -100,7 +100,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/pitfall-3d/" class="highlight-card">
+    <a href="/posts/pitfall-3d/" class="highlight-card" data-video="/assets/vids/gameplay.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/pitfall-3d-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Pitfall 3D</h3>
@@ -113,7 +113,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/voxel-ray-tracer/" class="highlight-card">
+    <a href="/posts/voxel-ray-tracer/" class="highlight-card" data-video="/assets/vids/pong.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/ray-trace-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Voxel Ray Tracer</h3>
@@ -126,7 +126,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/fps-engine/" class="highlight-card">
+    <a href="/posts/fps-engine/" class="highlight-card" data-video="/assets/vids/Stealthingk.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/fps-engine-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>FPS Engine</h3>
@@ -139,7 +139,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/BUas-intake/" class="highlight-card">
+    <a href="/posts/BUas-intake/" class="highlight-card" data-video="/assets/vids/playing.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/doodle-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Doodle Jump</h3>
@@ -152,4 +152,5 @@ toc: false
     </a>
 
   </div>
+  <script src="/assets/js/card-preview.js"></script>
 </div>
