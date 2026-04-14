@@ -87,7 +87,7 @@ toc: false
       </div>
     </a>
 
-    <a href="/posts/pitfall/" class="highlight-card" data-video="/assets/vidsPitfallvid3.mp4">
+    <a href="/posts/pitfall/" class="highlight-card" data-video="/assets/vids/Pitfallvid3.mp4">
       <div class="highlight-card-img" style="background-image: url('/assets/img/pitfall-banner.png')"></div>
       <div class="highlight-card-body">
         <h3>Pitfall</h3>
